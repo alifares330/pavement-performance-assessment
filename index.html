@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavement Assessment Framework | PolyU</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0E4D92; /* PolyU Blue */
+            --accent: #A02337;  /* PolyU Red */
+            --light: #f4f6f9;
+            --text: #2c3e50;
+        }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: var(--light); margin: 0; padding: 0; color: var(--text); }
+        
+        /* Header */
+        .header { background: linear-gradient(135deg, var(--primary), #153e6a); color: white; padding: 60px 20px; text-align: center; }
+        .header h1 { margin: 0; font-size: 2.8rem; font-weight: 700; }
+        .header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; font-weight: 300; }
+        .univ-tag { background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; display: inline-block; margin-bottom: 15px; }
+
+        /* Grid Layout */
+        .container { max-width: 1100px; margin: -40px auto 50px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        
+        /* Tool Cards */
+        .card { background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.3s ease; position: relative; border-top: 5px solid var(--accent); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
+        
+        .card-body { padding: 30px; text-align: center; }
+        .icon-box { width: 70px; height: 70px; background: #eef2f7; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; margin: 0 auto 20px; }
+        .card h3 { margin: 0 0 10px; color: var(--primary); }
+        .card p { font-size: 0.95rem; color: #666; line-height: 1.5; margin-bottom: 25px; min-height: 60px; }
+        
+        /* Status Badges */
+        .status { font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 15px; }
+        .online { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+        .offline { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+        .dev { background: #fff3e0; color: #ef6c00; border: 1px solid #ffe0b2; }
+
+        /* Buttons */
+        .btn { display: block; width: 100%; padding: 12px 0; background: var(--primary); color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s; }
+        .btn:hover { background: #0b3d75; }
+        .btn.disabled { background: #ccc; cursor: not-allowed; pointer-events: none; }
+
+        /* Footer */
+        .footer { text-align: center; padding: 40px; color: #7f8c8d; font-size: 0.9rem; border-top: 1px solid #ddd; }
+        .footer strong { color: var(--primary); }
+
+        /* Update Banner */
+        .last-update { text-align: center; margin-top: 10px; font-size: 0.85rem; color: #fff; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span class="univ-tag"><i class="fas fa-university"></i> The Hong Kong Polytechnic University</span>
+        <h1>Pavement Analysis Suite</h1>
+        <p>Integrated Framework for Surface & Subsurface Distress Assessment</p>
+        <div class="last-update">Portal Last Updated: Dec 14, 2025</div>
+    </div>
+
+    <div class="container">
+        
+        <!-- TOOL 1: RUTTING -->
+        <div class="card">
+            <div class="card-body">
+                <div class="icon-box"><i class="fas fa-road"></i></div>
+                <h3>Rutting & Lane Tool</h3>
+                <span class="status online">● System Online</span>
+                <p>Automated lane boundary detection and multi-algorithm rut depth measurement (AASHTO, Wire, Straight-Edge).</p>
+                
+                <!-- PASTE YOUR CLOUDFLARE LINK HERE -->
+                <a href="https://replies-bufing-representatives-emotional.trycloudflare.com/" class="btn" target="_blank">Launch Tool</a>
+            </div>
+        </div>
+
+        <!-- TOOL 2: CRACK SEGMENTATION -->
+        <div class="card">
+            <div class="card-body">
+                <div class="icon-box"><i class="fas fa-microscope"></i></div>
+                <h3>Crack Segmentation</h3>
+                <span class="status online">● System Online</span> <!-- Change to 'offline' if not running -->
+                <p>Deep Learning model (FPN/EfficientNet) for pixel-level segmentation of complex surface cracks.</p>
+                
+                <!-- UPDATE LINK WHEN RUNNING -->
+                <a href="#" class="btn disabled" target="_blank">Launch Tool</a>
+            </div>
+        </div>
+
+        <!-- TOOL 3: AUTO-PASER -->
+        <div class="card">
+            <div class="card-body">
+                <div class="icon-box"><i class="fas fa-robot"></i></div>
+                <h3>Auto-PASER</h3>
+                <span class="status dev">● In Development</span>
+                <p>LLM-driven qualitative assessment engine for automating standard PASER rating generation.</p>
+                
+                <!-- UPDATE LINK WHEN RUNNING -->
+                <a href="#" class="btn disabled" target="_blank">Coming Soon</a>
+            </div>
+        </div>
+
+        <!-- TOOL 4: SYNTHETIC DATA -->
+        <div class="card">
+            <div class="card-body">
+                <div class="icon-box"><i class="fas fa-magic"></i></div>
+                <h3>Synthetic Generator</h3>
+                <span class="status dev">● In Development</span>
+                <p>Generative AI tool for creating synthetic crack datasets to overcome data scarcity.</p>
+                
+                <!-- UPDATE LINK WHEN RUNNING -->
+                <a href="#" class="btn disabled" target="_blank">Coming Soon</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Principal Researcher: <strong>Ali Fares</strong> (PhD Candidate)</p>
+        <p>Supervisors: <strong>Prof. Tarek Zayed</strong> (PolyU) & <strong>Prof. Luis Miranda-Moreno</strong> (McGill)</p>
+    </div>
+
+</body>
+</html>
