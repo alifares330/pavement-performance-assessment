@@ -9,7 +9,7 @@
       "badgeText": "● System Online",
       "description": "Automated lane boundary detection and multi-algorithm rut depth measurement (AASHTO, Wire, Straight-Edge).",
       "link": "https://replies-bufing-representatives-emotional.trycloudflare.com/",
-      "buttonText": "Launch Tool"
+      "buttonText": "Coming Soon"
     },
     {
       "id": "crack",
@@ -19,7 +19,7 @@
       "badgeText": "● System Online",
       "description": "Deep Learning model (FPN/EfficientNet) for pixel-level segmentation of complex surface cracks.",
       "link": "https://wav-instrumental-carbon-polar.trycloudflare.com",
-      "buttonText": "Launch Tool"
+      "buttonText": "Coming Soon"
     },
     {
       "id": "auto_paser",
@@ -41,15 +41,15 @@
       "link": "https://pavement-dataset-generator-515579122925.us-west1.run.app/",
       "buttonText": "Launch Tool"
     },
-    #{
-      #"id": "code4",
-      #"title": "Code 4",
-      #"icon": "fa-code",
-      #"status": "dev",
-      #"badgeText": "● To Be Added",
-      #"description": "Reserved for the next tool/module (to be added later).",
-     # "link": "",
-     # "buttonText": "Coming Soon"
-    #}
+    {
+      "id": "code4",
+      "title": "Code 4",
+      "icon": "fa-code",
+      "status": "dev",
+      "badgeText": "● To Be Added",
+      "description": "Reserved for the next tool/module (to be added later).",
+      "link": "",
+      "buttonText": "Coming Soon"
+    }
   ]
 }
