@@ -1,126 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavement Assessment Framework | PolyU</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #0E4D92; /* PolyU Blue */
-            --accent: #A02337;  /* PolyU Red */
-            --light: #f4f6f9;
-            --text: #2c3e50;
-        }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: var(--light); margin: 0; padding: 0; color: var(--text); }
-        
-        /* Header */
-        .header { background: linear-gradient(135deg, var(--primary), #153e6a); color: white; padding: 60px 20px; text-align: center; }
-        .header h1 { margin: 0; font-size: 2.8rem; font-weight: 700; }
-        .header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; font-weight: 300; }
-        .univ-tag { background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; display: inline-block; margin-bottom: 15px; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Pavement Assessment Framework</title>
 
-        /* Grid Layout */
-        .container { max-width: 1100px; margin: -40px auto 50px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-        
-        /* Tool Cards */
-        .card { background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.3s ease; position: relative; border-top: 5px solid var(--accent); }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
-        
-        .card-body { padding: 30px; text-align: center; }
-        .icon-box { width: 70px; height: 70px; background: #eef2f7; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; margin: 0 auto 20px; }
-        .card h3 { margin: 0 0 10px; color: var(--primary); }
-        .card p { font-size: 0.95rem; color: #666; line-height: 1.5; margin-bottom: 25px; min-height: 60px; }
-        
-        /* Status Badges */
-        .status { font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 15px; }
-        .online { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
-        .offline { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
-        .dev { background: #fff3e0; color: #ef6c00; border: 1px solid #ffe0b2; }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        /* Buttons */
-        .btn { display: block; width: 100%; padding: 12px 0; background: var(--primary); color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s; }
-        .btn:hover { background: #0b3d75; }
-        .btn.disabled { background: #ccc; cursor: not-allowed; pointer-events: none; }
+  <style>
+    :root {
+      --primary: #0E4D92;
+      --accent: #A02337;
+      --light: #f4f6f9;
+      --text: #2c3e50;
+    }
 
-        /* Footer */
-        .footer { text-align: center; padding: 40px; color: #7f8c8d; font-size: 0.9rem; border-top: 1px solid #ddd; }
-        .footer strong { color: var(--primary); }
+    body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--light); margin: 0; color: var(--text); }
 
-        /* Update Banner */
-        .last-update { text-align: center; margin-top: 10px; font-size: 0.85rem; color: #fff; opacity: 0.8; }
-    </style>
+    .topnav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(14,77,146,0.96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    .topnav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 10px 20px;
+      display: flex; align-items: center; justify-content: space-between; color: #fff;
+    }
+    .topnav a { color: #fff; text-decoration: none; font-weight: 600; margin-left: 14px; opacity: 0.95; }
+    .topnav a:hover { opacity: 1; text-decoration: underline; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary), #153e6a);
+      color: #fff;
+      padding: 45px 20px;
+      text-align: center;
+    }
+    .header h1 { margin: 0; font-size: 2.4rem; }
+    .header p { margin: 10px 0 0; opacity: 0.92; font-weight: 300; }
+
+    .wrap { max-width: 1100px; margin: -30px auto 50px; padding: 0 20px; }
+    .grid { display: grid; grid-template-columns: 1.7fr 1fr; gap: 22px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border-top: 5px solid var(--accent);
+      overflow: hidden;
+    }
+    .card-inner { padding: 26px; }
+
+    h2 { margin: 0 0 12px; color: var(--primary); font-size: 1.35rem; }
+    p { line-height: 1.7; margin: 0 0 12px; color: #444; }
+
+    .meta {
+      display: grid;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .meta .row { display: flex; gap: 10px; align-items: flex-start; }
+    .meta i { color: var(--primary); margin-top: 2px; width: 18px; }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid #e6e8ee;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #2c3e50;
+      background: #fff;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .pill:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
+    .pill img { width: 18px; height: 18px; object-fit: contain; }
+
+    .footer {
+      text-align: center;
+      padding: 22px 20px 40px;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+    .footer strong { color: var(--primary); }
+  </style>
 </head>
+
 <body>
-
-    <div class="header">
-        <span class="univ-tag"><i class="fas fa-university"></i> The Hong Kong Polytechnic University</span>
-        <h1>Pavement Analysis Suite</h1>
-        <p>Integrated Framework for Surface & Subsurface Distress Assessment</p>
-        <div class="last-update">Portal Last Updated: Dec 14, 2025</div>
+  <div class="topnav">
+    <div class="topnav-inner">
+      <div class="brand"><i class="fas fa-layer-group"></i> Pavement Analysis Suite</div>
+      <div>
+        <a href="index.html">Tools</a>
+        <a href="about.html">About</a>
+      </div>
     </div>
+  </div>
 
-    <div class="container">
-        
-        <!-- TOOL 1: RUTTING -->
-        <div class="card">
-            <div class="card-body">
-                <div class="icon-box"><i class="fas fa-road"></i></div>
-                <h3>Rutting & Lane Tool</h3>
-                <span class="status online">● System Online</span>
-                <p>Automated lane boundary detection and multi-algorithm rut depth measurement (AASHTO, Wire, Straight-Edge).</p>
-                
-                <!-- PASTE YOUR CLOUDFLARE LINK HERE -->
-                <a href="https://replies-bufing-representatives-emotional.trycloudflare.com/" class="btn" target="_blank">Launch Tool</a>
-            </div>
-        </div>
+  <div class="header">
+    <h1>About the Research</h1>
+    <p>PhD research on integrated surface &amp; subsurface pavement performance assessment</p>
+  </div>
 
-        <!-- TOOL 2: CRACK SEGMENTATION -->
-        <div class="card">
-            <div class="card-body">
-                <div class="icon-box"><i class="fas fa-microscope"></i></div>
-                <h3>Crack Segmentation</h3>
-                <span class="status online">● System Online</span> <!-- Change to 'offline' if not running -->
-                <p>Deep Learning model (FPN/EfficientNet) for pixel-level segmentation of complex surface cracks.</p>
-                
-                <!-- UPDATE LINK WHEN RUNNING -->
-                <a href="#" class="btn disabled" target="_blank">Launch Tool</a>
-            </div>
-        </div>
+  <div class="wrap">
+    <div class="grid">
 
-        <!-- TOOL 3: AUTO-PASER -->
-        <div class="card">
-            <div class="card-body">
-                <div class="icon-box"><i class="fas fa-robot"></i></div>
-                <h3>Auto-PASER</h3>
-                <span class="status dev">● In Development</span>
-                <p>LLM-driven qualitative assessment engine for automating standard PASER rating generation.</p>
-                
-                <!-- UPDATE LINK WHEN RUNNING -->
-                <a href="#" class="btn disabled" target="_blank">Coming Soon</a>
-            </div>
-        </div>
+      <div class="card">
+        <div class="card-inner">
+          <h2>Thesis Summary</h2>
 
-        <!-- TOOL 4: SYNTHETIC DATA -->
-        <div class="card">
-            <div class="card-body">
-                <div class="icon-box"><i class="fas fa-magic"></i></div>
-                <h3>Synthetic Generator</h3>
-                <span class="status dev">● In Development</span>
-                <p>Generative AI tool for creating synthetic crack datasets to overcome data scarcity.</p>
-                
-                <!-- UPDATE LINK WHEN RUNNING -->
-                <a href="#" class="btn disabled" target="_blank">Coming Soon</a>
-            </div>
+          <p>
+            Global road networks are under growing strain, yet conventional pavement assessment practices remain
+            limited: they often emphasize surface distresses, under-represent subsurface health, and face practical
+            barriers to deploying advanced sensing and automated analytics at scale.
+          </p>
+
+          <p>
+            This PhD research develops an integrated, multi-sensing, non-destructive framework that combines
+            UAV and LLIS imagery for surface characterization with GPR for subsurface evaluation. Within this
+            framework, automated, data-driven models are developed for four critical distresses:
+            surface cracks, rutting, layer thickness deficiency, and subsurface cracks.
+          </p>
+
+          <p>
+            Key methodological advances include data-centric crack assessment strategies (transfer learning and
+            generative AI) to reduce annotation effort, harmonization of rutting measurements across sensing systems
+            via empirically validated conversion equations, and automated GPR interpretation using statistical and deep
+            learning models. Subsurface conditions are quantified through two new indices: the Thickness Condition Index
+            (TCI) and the Subsurface Crack Index (SCI).
+          </p>
+
+          <p>
+            The research further introduces two Integrated Pavement Performance Models (IPPM) — the Integrated Deductive-Based
+            Performance Index (IDPI) and the Integrated Fuzzy Performance Index (IFPI) — which synthesize surface and subsurface
+            indicators across five performance criteria (rideability, safety, user costs, deterioration rate, and environmental impact)
+            using FAHP. Large Language Models are leveraged both to automate qualitative PASER-style assessment (Auto-PASER) and to help
+            structure expert judgement for model weighting.
+          </p>
+
+          <p>
+            Validation results demonstrate strong accuracy and efficiency: crack annotation effort reductions of 80–95%,
+            robust rutting harmonization (R² &gt; 0.86) and substantial sampling reductions, high-performing GPR interpretation
+            (e.g., layer-interface detection and subsurface crack identification), and human-level Auto-PASER performance
+            (classification accuracy ~85–95% and MAE ~1.1–1.3). Overall, the framework provides a scalable decision-support
+            capability for proactive, data-driven pavement maintenance planning.
+          </p>
         </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <h2>Research Context</h2>
+          <div class="meta">
+            <div class="row">
+              <i class="fas fa-graduation-cap"></i>
+              <div>This tool suite supports PhD research on smart infrastructure management at <strong>The Hong Kong Polytechnic University</strong>.</div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div><strong>Researcher:</strong> Ali Fares (PolyU)</div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-users"></i>
+              <div>
+                <strong>Supervisors:</strong><br>
+                Prof. Tarek Zayed (PolyU)<br>
+                Prof. Luis Miranda-Moreno (McGill University) <span style="color:#666;">(supporting)</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div><strong>Contact:</strong> ali-i.fares@mail.mcgill.ca</div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-flask"></i>
+              <div><strong>Lab:</strong> SiMS Lab — Smart Infrastructure &amp; Management Systems</div>
+            </div>
+          </div>
+
+          <div class="links">
+            <!-- Put your local icons in /assets and reference them like below -->
+            <a class="pill" href="mailto:ali-i.fares@mail.mcgill.ca">
+              <img src="assets/email.svg" alt="Email" />
+              Email
+            </a>
+
+            <!-- Replace the # with your ResearchGate profile link if/when you want -->
+            <a class="pill" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="assets/researchgate.svg" alt="ResearchGate" />
+              ResearchGate
+            </a>
+
+            <!-- Optional: show lab logo as a link (or just display it) -->
+            <a class="pill" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="assets/sims_lab_logo.png" alt="SiMS Lab" />
+              SiMS Lab
+            </a>
+          </div>
+
+          <p style="margin-top:14px; color:#666; font-size:0.92rem;">
+            Tip: add your icons to <strong>/assets</strong> and keep filenames simple (no spaces).
+          </p>
+        </div>
+      </div>
 
     </div>
 
     <div class="footer">
-        <p>Principal Researcher: <strong>Ali Fares</strong> (PhD Candidate)</p>
-        <p>Supervisors: <strong>Prof. Tarek Zayed</strong> (PolyU) & <strong>Prof. Luis Miranda-Moreno</strong> (McGill)</p>
+      <div>© <strong>Ali Fares</strong> — Pavement Analysis Suite</div>
     </div>
-
+  </div>
 </body>
 </html>
