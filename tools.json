@@ -1,0 +1,55 @@
+{
+  "portalLastUpdated": "Dec 14, 2025",
+  "tools": [
+    {
+      "id": "rutting",
+      "title": "Rutting & Lane Tool",
+      "icon": "fa-road",
+      "status": "online",
+      "badgeText": "● System Online",
+      "description": "Automated lane boundary detection and multi-algorithm rut depth measurement (AASHTO, Wire, Straight-Edge).",
+      "link": "https://replies-bufing-representatives-emotional.trycloudflare.com/",
+      "buttonText": "Launch Tool"
+    },
+    {
+      "id": "crack",
+      "title": "Crack Segmentation",
+      "icon": "fa-microscope",
+      "status": "dev",
+      "badgeText": "● Link Pending",
+      "description": "Deep Learning model (FPN/EfficientNet) for pixel-level segmentation of complex surface cracks.",
+      "link": "",
+      "buttonText": "Coming Soon"
+    },
+    {
+      "id": "auto_paser",
+      "title": "Auto-PASER",
+      "icon": "fa-robot",
+      "status": "online",
+      "badgeText": "● System Online",
+      "description": "LLM-driven qualitative assessment engine for automating standard PASER rating generation.",
+      "link": "https://auto-paser-515579122925.us-west1.run.app/",
+      "buttonText": "Launch Tool"
+    },
+    {
+      "id": "synthetic",
+      "title": "Synthetic Generator",
+      "icon": "fa-magic",
+      "status": "online",
+      "badgeText": "● System Online",
+      "description": "Generative AI tool for creating synthetic crack datasets to overcome data scarcity.",
+      "link": "https://pavement-dataset-generator-515579122925.us-west1.run.app/",
+      "buttonText": "Launch Tool"
+    },
+    {
+      "id": "code4",
+      "title": "Code 4",
+      "icon": "fa-code",
+      "status": "dev",
+      "badgeText": "● To Be Added",
+      "description": "Reserved for the next tool/module (to be added later).",
+      "link": "",
+      "buttonText": "Coming Soon"
+    }
+  ]
+}
