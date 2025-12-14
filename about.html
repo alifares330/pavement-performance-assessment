@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Pavement Assessment Framework</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #0E4D92;
+      --accent: #A02337;
+      --light: #f4f6f9;
+      --text: #2c3e50;
+    }
+
+    body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--light); margin: 0; color: var(--text); }
+
+    .topnav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(14,77,146,0.96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    .topnav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 10px 20px;
+      display: flex; align-items: center; justify-content: space-between; color: #fff;
+    }
+    .topnav a { color: #fff; text-decoration: none; font-weight: 600; margin-left: 14px; opacity: 0.95; }
+    .topnav a:hover { opacity: 1; text-decoration: underline; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary), #153e6a);
+      color: #fff;
+      padding: 45px 20px;
+      text-align: center;
+    }
+    .header h1 { margin: 0; font-size: 2.4rem; }
+    .header p { margin: 10px 0 0; opacity: 0.92; font-weight: 300; }
+
+    .wrap { max-width: 1100px; margin: -30px auto 50px; padding: 0 20px; }
+    .grid { display: grid; grid-template-columns: 1.7fr 1fr; gap: 22px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border-top: 5px solid var(--accent);
+      overflow: hidden;
+    }
+    .card-inner { padding: 26px; }
+
+    h2 { margin: 0 0 12px; color: var(--primary); font-size: 1.35rem; }
+    p { line-height: 1.7; margin: 0 0 12px; color: #444; }
+
+    .meta {
+      display: grid;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .meta .row { display: flex; gap: 10px; align-items: flex-start; }
+    .meta i { color: var(--primary); margin-top: 2px; width: 18px; }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid #e6e8ee;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #2c3e50;
+      background: #fff;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .pill:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
+    .pill img { width: 18px; height: 18px; object-fit: contain; }
+
+    .footer {
+      text-align: center;
+      padding: 22px 20px 40px;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+    .footer strong { color: var(--primary); }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <div class="topnav-inner">
+      <div class="brand"><i class="fas fa-layer-group"></i> Pavement Analysis Suite</div>
+      <div>
+        <a href="index.html">Tools</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1>About the Research</h1>
+    <p>PhD research on integrated surface &amp; subsurface pavement performance assessment</p>
+  </div>
+
+  <div class="wrap">
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-inner">
+          <h2>Thesis Summary</h2>
+
+          <p>
+            Global road networks are under growing strain, yet conventional pavement assessment practices remain
+            limited: they often emphasize surface distresses, under-represent subsurface health, and face practical
+            barriers to deploying advanced sensing and automated analytics at scale.
+          </p>
+
+          <p>
+            This PhD research develops an integrated, multi-sensing, non-destructive framework that combines
+            UAV and LLIS imagery for surface characterization with GPR for subsurface evaluation. Within this
+            framework, automated, data-driven models are developed for four critical distresses:
+            surface cracks, rutting, layer thickness deficiency, and subsurface cracks.
+          </p>
+
+          <p>
+            Key methodological advances include data-centric crack assessment strategies (transfer learning and
+            generative AI) to reduce annotation effort, harmonization of rutting measurements across sensing systems
+            via empirically validated conversion equations, and automated GPR interpretation using statistical and deep
+            learning models. Subsurface conditions are quantified through two new indices: the Thickness Condition Index
+            (TCI) and the Subsurface Crack Index (SCI).
+          </p>
+
+          <p>
+            The research further introduces two Integrated Pavement Performance Models (IPPM) — the Integrated Deductive-Based
+            Performance Index (IDPI) and the Integrated Fuzzy Performance Index (IFPI) — which synthesize surface and subsurface
+            indicators across five performance criteria (rideability, safety, user costs, deterioration rate, and environmental impact)
+            using FAHP. Large Language Models are leveraged both to automate qualitative PASER-style assessment (Auto-PASER) and to help
+            structure expert judgement for model weighting.
+          </p>
+
+          <p>
+            Validation results demonstrate strong accuracy and efficiency: crack annotation effort reductions of 80–95%,
+            robust rutting harmonization (R² &gt; 0.86) and substantial sampling reductions, high-performing GPR interpretation
+            (e.g., layer-interface detection and subsurface crack identification), and human-level Auto-PASER performance
+            (classification accuracy ~85–95% and MAE ~1.1–1.3). Overall, the framework provides a scalable decision-support
+            capability for proactive, data-driven pavement maintenance planning.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <h2>Research Context</h2>
+          <div class="meta">
+            <div class="row">
+              <i class="fas fa-graduation-cap"></i>
+              <div>This tool suite supports PhD research on smart infrastructure management at <strong>The Hong Kong Polytechnic University</strong>.</div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div><strong>Researcher:</strong> Ali Fares (PolyU)</div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-users"></i>
+              <div>
+                <strong>Supervisors:</strong><br>
+                Prof. Tarek Zayed (PolyU)<br>
+                Prof. Luis Miranda-Moreno (McGill University) <span style="color:#666;">(supporting)</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div><strong>Contact:</strong> ali-i.fares@mail.mcgill.ca</div>
+            </div>
+
+            <div class="row">
+              <i class="fas fa-flask"></i>
+              <div><strong>Lab:</strong> SiMS Lab — Smart Infrastructure &amp; Management Systems</div>
+            </div>
+          </div>
+
+          <div class="links">
+            <!-- Put your local
