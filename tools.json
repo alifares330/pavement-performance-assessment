@@ -15,10 +15,10 @@
       "id": "crack",
       "title": "Crack Segmentation",
       "icon": "fa-microscope",
-      "status": "dev",
-      "badgeText": "● Link Pending",
+      "status": "online",
+      "badgeText": "● System Online",
       "description": "Deep Learning model (FPN/EfficientNet) for pixel-level segmentation of complex surface cracks.",
-      "link": "",
+      "link": "https://wav-instrumental-carbon-polar.trycloudflare.com",
       "buttonText": "Coming Soon"
     },
     {
