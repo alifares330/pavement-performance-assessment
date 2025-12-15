@@ -1,0 +1,80 @@
+name: Sync OneDrive Links
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # Runs every 30 minutes
+  workflow_dispatch: # Allows manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Download Link from OneDrive
+        run: |
+          # Download from OneDrive using your specific link
+          curl -L "https://connectpolyu-my.sharepoint.com/:u:/g/personal/22039716r_connect_polyu_hk/IQAZukIl0xaGR7VDIkof354FAWYb1PV0A6s3wR8eCQcwbcs?e=bTS7Yf&download=1" -o rutdepth_link.json
+
+      - name: Update tools.json using Python
+        run: |
+          python3 -c "
+          import json
+          import os
+
+          # 1. Load the new link from OneDrive file
+          try:
+              with open('rutdepth_link.json', 'r') as f:
+                  link_data = json.load(f)
+                  new_url = link_data.get('url', '')
+                  print(f'Found URL in OneDrive file: {new_url}')
+          except Exception as e:
+              print(f'Error reading OneDrive file: {e}')
+              exit(1)
+
+          # 2. Load the existing tools.json
+          if os.path.exists('tools.json'):
+              with open('tools.json', 'r') as f:
+                  tools_config = json.load(f)
+
+              # 3. Find the 'rutting' tool and update its link
+              updated = False
+              for tool in tools_config.get('tools', []):
+                  if tool.get('id') == 'rutting':
+                      if tool.get('link') != new_url:
+                          print(f'Updating Rutting Tool link from {tool.get('link')} to: {new_url}')
+                          tool['link'] = new_url
+                          tool['buttonText'] = 'Launch Tool'
+                          updated = True
+                      else:
+                          print('Link is already up to date.')
+                      break
+              
+              # 4. Save the file back
+              if updated:
+                  with open('tools.json', 'w') as f:
+                      json.dump(tools_config, f, indent=2)
+          else:
+              print('tools.json not found!')
+          "
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "Link Updater Bot"
+          git config --global user.email "bot@github.com"
+          
+          # Remove the temporary downloaded file
+          rm rutdepth_link.json
+
+          # Commit changes if tools.json was modified
+          if [[ -n $(git status -s tools.json) ]]; then
+            git add tools.json
+            git commit -m "Auto-update Rutting Tool URL from OneDrive"
+            git push
+          else
+            echo "No changes needed."
+          fi
