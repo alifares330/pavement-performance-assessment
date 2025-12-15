@@ -191,8 +191,7 @@
     <p>Principal Researcher: <strong>Ali Fares</strong> (PhD Candidate, PolyU)</p>
     <p>Supervisors: <strong>Prof. Tarek Zayed</strong> (PolyU)</p>
     <p class="muted">Contact: <strong>ali.i.fares@connect.polyu.hk</strong></p>
-    </div>
-    <div class="last-update" id="lastUpdate">Portal Last Updated: —</div>
+    <p class="last-update" id="lastUpdate">Portal Last Updated: —</p>
   </div>
 
   <script>
@@ -215,7 +214,7 @@
       if (!res.ok) throw new Error(`Failed to fetch tools.json (${res.status})`);
       const data = await res.json();
   
-      // Update header last-updated label
+      // Update footer last-updated label
       document.getElementById("lastUpdate").textContent =
         `Portal Last Updated: ${data.portalLastUpdated || "—"}`;
   
