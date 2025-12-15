@@ -2,64 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Gist Fetch Debug</title>
+  <title>Civil Engineering Tools Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Using FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <style>
-    body { font-family: monospace; padding: 24px; background: #f6f7f9; color: #222; }
-    h1 { margin-top: 0; }
-    .ok { color: green; font-weight: bold; }
-    .err { color: red; font-weight: bold; }
-    pre { background: #fff; padding: 12px; border: 1px solid #ccc; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
-    .box { margin-bottom: 20px; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px; background: #f4f4f9; color: #333; }
+    h1 { text-align: center; margin-bottom: 40px; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card-header { display: flex; align-items: center; margin-bottom: 15px; }
+    .card-header i { font-size: 24px; margin-right: 15px; color: #007bff; }
+    .card-header h2 { font-size: 1.25rem; margin: 0; }
+
+    .badge {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+      border-radius: 12px;
+      background: #e2e6ea;
+      color: #555;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .badge.online { background: #d4edda; color: #155724; }
+
+    .description { color: #666; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px; }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #0056b3; }
+    .btn.disabled { background: #ccc; pointer-events: none; }
   </style>
 </head>
 
 <body>
-<h1>Gist JSON Fetch Debug</h1>
 
-<div class="box"><strong>Status:</strong> <span id="status">Loading…</span></div>
-
-<div class="box">
-  <strong>Raw response:</strong>
-  <pre id="raw">—</pre>
-</div>
-
-<div class="box">
-  <strong>Parsed value (cfg.url):</strong>
-  <pre id="parsed">—</pre>
-</div>
+  <h1><i class="fas fa-hard-hat"></i> Engineering Tools Portal</h1>
+  <div id="tools-container" class="grid-container">
+    <!-- Cards will be injected here by JavaScript -->
+    <p style="text-align:center; width:100%;">Loading tools...</p>
+  </div>
 
 <script>
-  // ✅ Put your REAL raw gist URL here:
-  // Example format:
-  // https://gist.githubusercontent.com/<user>/<gistid>/raw/rutdepth_link.json
-  const GIST_URL = "https://gist.githubusercontent.com/<user>/<gistid>/raw/rutdepth_link.json";
+  // We fetch the local tools.json file
+  // (The GitHub Action has already updated the link inside it!)
+  const TOOLS_CONFIG_URL = "./tools.json"; 
 
-  (async () => {
+  async function loadTools() {
     try {
-      // cache-bust (use ? if no query string exists)
-      const url = GIST_URL + (GIST_URL.includes("?") ? "&" : "?") + "_=" + Date.now();
+      // Add timestamp to prevent browser caching old versions
+      const response = await fetch(TOOLS_CONFIG_URL + "?t=" + Date.now());
+      if (!response.ok) throw new Error("Failed to load config");
+      
+      const data = await response.json();
+      const container = document.getElementById("tools-container");
+      container.innerHTML = ""; // Clear loading message
 
-      const r = await fetch(url, { cache: "no-store" });
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      data.tools.forEach(tool => {
+        // Determine button state
+        const isReady = tool.link && tool.link.trim() !== "";
+        const btnClass = isReady ? "btn" : "btn disabled";
+        const btnLink = isReady ? tool.link : "#";
+        
+        // Create Card HTML
+        const cardHTML = `
+          <div class="card">
+            <div>
+              <div class="card-header">
+                <i class="fas ${tool.icon}"></i>
+                <h2>${tool.title}</h2>
+              </div>
+              <span class="badge ${tool.status === 'online' ? 'online' : ''}">${tool.badgeText}</span>
+              <p class="description">${tool.description}</p>
+            </div>
+            <a href="${btnLink}" class="${btnClass}" target="_blank">
+              ${tool.buttonText}
+            </a>
+          </div>
+        `;
+        container.innerHTML += cardHTML;
+      });
 
-      const raw = await r.text();
-      document.getElementById("raw").textContent = raw;
-
-      const cfg = JSON.parse(raw);
-      if (!cfg.url) throw new Error("JSON parsed but 'url' field is missing");
-
-      document.getElementById("parsed").textContent = cfg.url;
-      document.getElementById("status").textContent = "SUCCESS";
-      document.getElementById("status").className = "ok";
     } catch (err) {
-      document.getElementById("status").textContent = "FAILED";
-      document.getElementById("status").className = "err";
-      document.getElementById("parsed").textContent = err.message;
-      console.error("Gist fetch failed:", err);
+      console.error(err);
+      document.getElementById("tools-container").innerHTML = 
+        `<p style="color:red; text-align:center;">Error loading tools. Please try again later.</p>`;
     }
-  })();
+  }
+
+  loadTools();
 </script>
+
 </body>
 </html>
