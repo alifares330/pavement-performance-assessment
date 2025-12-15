@@ -42,14 +42,14 @@
       "buttonText": "Launch Tool"
     },
     {
-      "id": "code4",
-      "title": "Code 4",
+      "id": "fuzzy_assessment",
+      "title": "Performan Assessment",
       "icon": "fa-code",
-      "status": "dev",
-      "badgeText": "\u25cf To Be Added",
-      "description": "Reserved for the next tool/module (to be added later).",
+      "status": "online",
+      "badgeText": "\u25cf System Online",
+      "description": "An Integrated Fuzzy MCDM System for Comprehensive Pavement Performance Assessment.",
       "link": "",
-      "buttonText": "Coming Soon"
+      "buttonText": "Launch Tool"
     }
   ]
 }
