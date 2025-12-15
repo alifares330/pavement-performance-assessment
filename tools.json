@@ -48,7 +48,7 @@
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "An Integrated Fuzzy MCDM System for Comprehensive Pavement Performance Assessment.",
-      "link": "https://spec-serious-framework-jesus.trycloudflare.com",
+      "link": "https://spec-serious-framework-jesuses.trycloudflare.com",
       "buttonText": "Launch Tool"
     },
     {
@@ -58,7 +58,7 @@
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "A tool to generate high-fidelity synthetic expert datasets for pavement engineering decision-making.",
-      "link": "https://spec-serious-framework-jesus.trycloudflare.com",
+      "link": "https://pavementai-surveyor-515579122925.us-west1.run.app/",
       "buttonText": "Launch Tool"
     }
   ]
