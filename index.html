@@ -2,71 +2,279 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>OneDrive Fetch Test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavement Assessment Framework | PolyU</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
   <style>
+    :root {
+      --primary: #0E4D92;
+      --accent: #A02337;
+      --light: #f4f6f9;
+      --text: #2c3e50;
+    }
+
     body {
-      font-family: monospace;
-      padding: 20px;
-      background: #f7f7f7;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light);
+      margin: 0;
+      padding: 0;
+      color: var(--text);
     }
-    .ok { color: green; }
-    .err { color: red; }
-    pre {
+
+    /* Top Nav */
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(14,77,146,0.96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    .topnav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+    }
+    .topnav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 14px;
+      opacity: 0.95;
+    }
+    .topnav a:hover { opacity: 1; text-decoration: underline; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .brand i { color: #fff; opacity: 0.95; }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, var(--primary), #153e6a);
+      color: white;
+      padding: 55px 20px 60px;
+      text-align: center;
+    }
+    .header h1 { margin: 0; font-size: 2.8rem; font-weight: 700; }
+    .header p { font-size: 1.2rem; opacity: 0.92; margin-top: 10px; font-weight: 300; }
+    .univ-tag {
+      background: rgba(255,255,255,0.2);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    /* Grid Layout */
+    .container {
+      max-width: 1100px;
+      margin: -40px auto 50px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    /* Tool Cards */
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      position: relative;
+      border-top: 5px solid var(--accent);
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
+
+    .card-body { padding: 30px; text-align: center; }
+    .icon-box {
+      width: 70px; height: 70px;
+      background: #eef2f7;
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 30px;
+      margin: 0 auto 20px;
+    }
+    .card h3 { margin: 0 0 10px; color: var(--primary); }
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 25px;
+      min-height: 60px;
+    }
+
+    /* Status Badges */
+    .status {
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .online { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+    .offline { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+    .dev { background: #fff3e0; color: #ef6c00; border: 1px solid #ffe0b2; }
+
+    /* Buttons */
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px 0;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #0b3d75; }
+    .btn.disabled { background: #ccc; cursor: not-allowed; pointer-events: none; }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 34px 20px 40px;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
       background: #fff;
-      padding: 12px;
-      border: 1px solid #ccc;
-      overflow-x: auto;
     }
+    .footer strong { color: var(--primary); }
+
+    /* Update Banner */
+    .last-update { text-align: center; margin-top: 10px; font-size: 0.85rem; color: #fff; opacity: 0.82; }
+
+    /* Small helper */
+    .muted { opacity: 0.9; }
   </style>
 </head>
+
 <body>
+  <div class="topnav">
+    <div class="topnav-inner">
+      <div class="brand"><i class="fas fa-layer-group"></i> Pavement Analysis Suite</div>
+      <div>
+        <a href="index.html">Tools</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
 
-<h2>OneDrive JSON Fetch Test</h2>
+  <div class="header">
+    <h1>Pavement Analysis Suite</h1>
+    <p>Integrated Framework for Surface &amp; Subsurface Distress Assessment</p>
+    <div class="last-update" id="lastUpdate">Portal Last Updated: —</div>
+  </div>
 
-<p><strong>Status:</strong> <span id="status">Loading…</span></p>
+  <div class="container" id="toolsContainer">
+    <!-- Cards are injected here from tools.json -->
+  </div>
 
-<h3>Raw Response</h3>
-<pre id="raw">—</pre>
+  <div class="footer">
+    <p>Principal Researcher: <strong>Ali Fares</strong> (PhD Candidate, PolyU)</p>
+    <p>Supervisors: <strong>Prof. Tarek Zayed</strong> (PolyU)</p>
+    <p class="muted">Contact: <strong>ali.i.fares@connect.polyu.hk</strong></p>
+  </div>
 
-<h3>Parsed URL</h3>
-<pre id="parsed">—</pre>
+  <script>
+    const RUTTING_CONFIG_URL =
+      "https://connectpolyu-my.sharepoint.com/personal/22039716r_connect_polyu_hk/_layouts/15/download.aspx?UniqueId=2542ba1916d34786b543224a1fdf9e05&e=3k6uPa";
 
-<script>
-  // ⚠️ Use the SAME link you are using in production
-  const ONEDRIVE_URL =
-    "https://connectpolyu-my.sharepoint.com/personal/22039716r_connect_polyu_hk/_layouts/15/download.aspx?UniqueId=2542ba1916d34786b543224a1fdf9e05";
-
-  (async () => {
-    try {
-      const url = `${ONEDRIVE_URL}&_=${Date.now()}`; // cache bust
-      const r = await fetch(url, { cache: "no-store" });
-
-      if (!r.ok) {
-        throw new Error(`HTTP ${r.status}`);
-      }
-
-      const raw = await r.text();
-      document.getElementById("raw").textContent = raw;
-
-      const cfg = JSON.parse(raw);
-
-      if (!cfg.url) {
-        throw new Error("JSON parsed but 'url' field missing");
-      }
-
-      document.getElementById("parsed").textContent = cfg.url;
-      document.getElementById("status").textContent = "SUCCESS";
-      document.getElementById("status").className = "ok";
-
-    } catch (err) {
-      document.getElementById("status").textContent = "FAILED";
-      document.getElementById("status").className = "err";
-      document.getElementById("parsed").textContent = err.message;
-      console.error("OneDrive test failed:", err);
+    function statusClass(status) {
+      if (status === "online") return "online";
+      if (status === "offline") return "offline";
+      return "dev";
     }
-  })();
-</script>
 
+    function isValidLink(link) {
+      return typeof link === "string" && link.trim().length > 0;
+    }
+
+    async function loadTools() {
+      const res = await fetch("tools.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("Failed to load tools.json");
+      const data = await res.json();
+    
+      // --- PATCH: override rutting link from OneDrive JSON (if available) ---
+      try {
+        const r = await fetch(RUTTING_CONFIG_URL, { cache: "no-store" });
+        if (r.ok) {
+          const cfg = await r.json(); // expects { "url": "https://..." }
+          const rut = (data.tools || []).find(t => t.id === "rutting");
+          if (rut && cfg && typeof cfg.url === "string" && cfg.url.trim()) {
+            rut.link = cfg.url.trim();
+            rut.buttonText = "Launch Tool"; // optional
+            rut.status = "online";          // optional
+            rut.badgeText = "● System Online"; // optional
+          }
+        }
+      } catch (e) {
+        console.warn("Rutting link update failed (OneDrive fetch):", e);
+        // keep tools.json link as fallback
+      }
+      // --- END PATCH ---
+    
+      // Update header last-updated label
+      document.getElementById("lastUpdate").textContent =
+        `Portal Last Updated: ${data.portalLastUpdated || "—"}`;
+    
+      const container = document.getElementById("toolsContainer");
+      container.innerHTML = "";
+    
+      (data.tools || []).forEach(t => {
+        const card = document.createElement("div");
+        card.className = "card";
+    
+        const linkOk = isValidLink(t.link);
+        const btnClass = linkOk ? "btn" : "btn disabled";
+        const btnText = linkOk ? (t.buttonText || "Launch Tool") : (t.buttonText || "Coming Soon");
+    
+        card.innerHTML = `
+          <div class="card-body">
+            <div class="icon-box"><i class="fas ${t.icon || "fa-cube"}"></i></div>
+            <h3>${t.title || "Tool"}</h3>
+            <span class="status ${statusClass(t.status)}">${t.badgeText || ""}</span>
+            <p>${t.description || ""}</p>
+            <a href="${linkOk ? t.link : "#"}" class="${btnClass}" target="_blank" rel="noopener noreferrer">${btnText}</a>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    loadTools().catch(err => {
+      console.error(err);
+      const container = document.getElementById("toolsContainer");
+      container.innerHTML = `
+        <div class="card">
+          <div class="card-body">
+            <div class="icon-box"><i class="fas fa-triangle-exclamation"></i></div>
+            <h3>Unable to load tools</h3>
+            <span class="status offline">● Error</span>
+            <p>Please check that <strong>tools.json</strong> exists in the repository root and is valid JSON.</p>
+            <a href="#" class="btn disabled">Unavailable</a>
+          </div>
+        </div>
+      `;
+    });
+  </script>
 </body>
 </html>
