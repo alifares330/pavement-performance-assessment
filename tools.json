@@ -1,7 +1,7 @@
 {
   "portalLastUpdated": "Dec 14, 2025",
   "tools": [
-     {
+    {
       "id": "synthetic",
       "title": "AI Dataset Generator",
       "icon": "fa-magic",
@@ -48,7 +48,7 @@
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "An Integrated Fuzzy MCDM System for Comprehensive Pavement Performance Assessment.",
-      "link": "https://spec-serious-framework-jesuses.trycloudflare.com",
+      "link": "https://tommy-lexmark-atom-bay.trycloudflare.com",
       "buttonText": "Launch Tool"
     },
     {
