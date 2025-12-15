@@ -68,14 +68,6 @@
     }
     .header h1 { margin: 0; font-size: 2.8rem; font-weight: 700; }
     .header p { font-size: 1.2rem; opacity: 0.92; margin-top: 10px; font-weight: 300; }
-    .univ-tag {
-      background: rgba(255,255,255,0.2);
-      padding: 5px 15px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
 
     /* Grid Layout */
     .container {
@@ -161,8 +153,6 @@
 
     /* Update Banner */
     .last-update { text-align: center; margin-top: 10px; font-size: 0.85rem; color: #fff; opacity: 0.82; }
-
-    /* Small helper */
     .muted { opacity: 0.9; }
   </style>
 </head>
@@ -184,9 +174,7 @@
     <div class="last-update" id="lastUpdate">Portal Last Updated: —</div>
   </div>
 
-  <div class="container" id="toolsContainer">
-    <!-- Cards are injected here from tools.json -->
-  </div>
+  <div class="container" id="toolsContainer"></div>
 
   <div class="footer">
     <p>Principal Researcher: <strong>Ali Fares</strong> (PhD Candidate, PolyU)</p>
@@ -195,8 +183,10 @@
   </div>
 
   <script>
+    // OneDrive/SharePoint "download.aspx" link to rutdepth_link.json
+    // NOTE: we cache-bust with &_=timestamp when fetching.
     const RUTTING_CONFIG_URL =
-      "https://connectpolyu-my.sharepoint.com/personal/22039716r_connect_polyu_hk/_layouts/15/download.aspx?UniqueId=2542ba1916d34786b543224a1fdf9e05&e=3k6uPa";
+      "https://connectpolyu-my.sharepoint.com/personal/22039716r_connect_polyu_hk/_layouts/15/download.aspx?UniqueId=2542ba1916d34786b543224a1fdf9e05";
 
     function statusClass(status) {
       if (status === "online") return "online";
@@ -212,41 +202,46 @@
       const res = await fetch("tools.json", { cache: "no-store" });
       if (!res.ok) throw new Error("Failed to load tools.json");
       const data = await res.json();
-    
-      // --- PATCH: override rutting link from OneDrive JSON (if available) ---
+
+      // --- PATCH (robust): override rutting link from OneDrive JSON ---
       try {
-        const r = await fetch(RUTTING_CONFIG_URL, { cache: "no-store" });
-        if (r.ok) {
-          const cfg = await r.json(); // expects { "url": "https://..." }
-          const rut = (data.tools || []).find(t => t.id === "rutting");
-          if (rut && cfg && typeof cfg.url === "string" && cfg.url.trim()) {
-            rut.link = cfg.url.trim();
-            rut.buttonText = "Launch Tool"; // optional
-            rut.status = "online";          // optional
-            rut.badgeText = "● System Online"; // optional
-          }
+        const url = `${RUTTING_CONFIG_URL}&_=${Date.now()}`; // cache-bust
+        const r = await fetch(url, { cache: "no-store" });
+        if (!r.ok) throw new Error(`OneDrive fetch failed: HTTP ${r.status}`);
+
+        const raw = await r.text();          // SharePoint-safe
+        const cfg = JSON.parse(raw);         // expects { "url": "https://..." }
+
+        const rut = (data.tools || []).find(t => t.id === "rutting");
+        if (rut && cfg && typeof cfg.url === "string" && cfg.url.trim()) {
+          rut.link = cfg.url.trim();
+          rut.buttonText = "Launch Tool";
+          rut.status = "online";
+          rut.badgeText = "● System Online";
+        } else {
+          throw new Error("Missing cfg.url or rutting tool not found in tools.json");
         }
       } catch (e) {
-        console.warn("Rutting link update failed (OneDrive fetch):", e);
-        // keep tools.json link as fallback
+        console.warn("Rutting link update failed (OneDrive):", e);
+        // fallback = keep link from tools.json
       }
       // --- END PATCH ---
-    
+
       // Update header last-updated label
       document.getElementById("lastUpdate").textContent =
         `Portal Last Updated: ${data.portalLastUpdated || "—"}`;
-    
+
       const container = document.getElementById("toolsContainer");
       container.innerHTML = "";
-    
+
       (data.tools || []).forEach(t => {
         const card = document.createElement("div");
         card.className = "card";
-    
+
         const linkOk = isValidLink(t.link);
         const btnClass = linkOk ? "btn" : "btn disabled";
         const btnText = linkOk ? (t.buttonText || "Launch Tool") : (t.buttonText || "Coming Soon");
-    
+
         card.innerHTML = `
           <div class="card-body">
             <div class="icon-box"><i class="fas ${t.icon || "fa-cube"}"></i></div>
