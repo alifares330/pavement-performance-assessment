@@ -195,6 +195,9 @@
   </div>
 
   <script>
+    const RUTTING_CONFIG_URL =
+      "https://connectpolyu-my.sharepoint.com/personal/22039716r_connect_polyu_hk/_layouts/15/download.aspx?UniqueId=2542ba1916d34786b543224a1fdf9e05&e=3k6uPa";
+
     function statusClass(status) {
       if (status === "online") return "online";
       if (status === "offline") return "offline";
@@ -209,21 +212,41 @@
       const res = await fetch("tools.json", { cache: "no-store" });
       if (!res.ok) throw new Error("Failed to load tools.json");
       const data = await res.json();
-
+    
+      // --- PATCH: override rutting link from OneDrive JSON (if available) ---
+      try {
+        const r = await fetch(RUTTING_CONFIG_URL, { cache: "no-store" });
+        if (r.ok) {
+          const cfg = await r.json(); // expects { "url": "https://..." }
+          const rut = (data.tools || []).find(t => t.id === "rutting");
+          if (rut && cfg && typeof cfg.url === "string" && cfg.url.trim()) {
+            rut.link = cfg.url.trim();
+            rut.buttonText = "Launch Tool"; // optional
+            rut.status = "online";          // optional
+            rut.badgeText = "● System Online"; // optional
+          }
+        }
+      } catch (e) {
+        console.warn("Rutting link update failed (OneDrive fetch):", e);
+        // keep tools.json link as fallback
+      }
+      // --- END PATCH ---
+    
       // Update header last-updated label
-      document.getElementById("lastUpdate").textContent = `Portal Last Updated: ${data.portalLastUpdated || "—"}`;
-
+      document.getElementById("lastUpdate").textContent =
+        `Portal Last Updated: ${data.portalLastUpdated || "—"}`;
+    
       const container = document.getElementById("toolsContainer");
       container.innerHTML = "";
-
+    
       (data.tools || []).forEach(t => {
         const card = document.createElement("div");
         card.className = "card";
-
+    
         const linkOk = isValidLink(t.link);
         const btnClass = linkOk ? "btn" : "btn disabled";
         const btnText = linkOk ? (t.buttonText || "Launch Tool") : (t.buttonText || "Coming Soon");
-
+    
         card.innerHTML = `
           <div class="card-body">
             <div class="icon-box"><i class="fas ${t.icon || "fa-cube"}"></i></div>
