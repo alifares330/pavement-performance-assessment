@@ -4,7 +4,7 @@
     {
       "id": "synthetic",
       "title": "AI Dataset Generator",
-      "icon": "fa-magic",
+      "icon": "fa-wand-magic-sparkles",
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "Generative AI tool for creating synthetic crack datasets to overcome data scarcity.",
@@ -18,7 +18,7 @@
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "Deep Learning model (FPN/EfficientNet) for pixel-level segmentation of complex surface cracks.",
-      "link": "https://matter-polyester-journey-tracy.trycloudflare.com",
+      "link": "https://territory-patients-fuji-mom.trycloudflare.com",
       "buttonText": "Launch Tool"
     },
     {
@@ -28,7 +28,7 @@
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "Automated lane boundary detection and multi-algorithm rut depth measurement (AASHTO, Wire, Straight-Edge).",
-      "link": "https://necessity-following-incident-drainage.trycloudflare.com",
+      "link": "https://spec-serious-framework-jesus.trycloudflare.com",
       "buttonText": "Launch Tool"
     },
     {
@@ -43,18 +43,18 @@
     },
     {
       "id": "fuzzy_assessment",
-      "title": "Performan Assessment",
-      "icon": "fa-code",
+      "title": "Performance Assessment",
+      "icon": "fa-chart-line",
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "An Integrated Fuzzy MCDM System for Comprehensive Pavement Performance Assessment.",
-      "link": "https://lid-leader-folding-dreams.trycloudflare.com",
+      "link": "https://tommy-lexmark-atom-bay.trycloudflare.com",
       "buttonText": "Launch Tool"
     },
     {
       "id": "survey_generator",
       "title": "Synthetic Experts",
-      "icon": "fa-code",
+      "icon": "fa-user-group",
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "A tool to generate high-fidelity synthetic expert datasets for pavement engineering decision-making.",
