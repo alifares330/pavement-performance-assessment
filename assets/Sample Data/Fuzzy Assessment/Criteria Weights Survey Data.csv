@@ -1,0 +1,101 @@
+SurveyID,Criteria A,Criteria B,Rating
+03_UK_CF_ML,Deterioration Rate,Environmental Impact,9:01
+03_UK_CF_ML,Rideability,Deterioration Rate,1:09
+03_UK_CF_ML,Rideability,Environmental Impact,9:01
+03_UK_CF_ML,Rideability,Safety,1:09
+03_UK_CF_ML,Rideability,User Costs,1:05
+03_UK_CF_ML,Safety,Deterioration Rate,9:01
+03_UK_CF_ML,Safety,Environmental Impact,9:01
+03_UK_CF_ML,User Costs,Deterioration Rate,1:09
+03_UK_CF_ML,User Costs,Environmental Impact,9:01
+03_UK_CF_ML,User Costs,Safety,1:09
+04_CA_CF_ML,Deterioration Rate,Environmental Impact,4:01
+04_CA_CF_ML,Rideability,Deterioration Rate,4:01
+04_CA_CF_ML,Rideability,Environmental Impact,5:01
+04_CA_CF_ML,Rideability,Safety,1:05
+04_CA_CF_ML,Rideability,User Costs,3:01
+04_CA_CF_ML,Safety,Deterioration Rate,6:01
+04_CA_CF_ML,Safety,Environmental Impact,5:01
+04_CA_CF_ML,User Costs,Deterioration Rate,1:04
+04_CA_CF_ML,User Costs,Environmental Impact,4:01
+04_CA_CF_ML,User Costs,Safety,1:06
+05_US_AI_ML,Deterioration Rate,Environmental Impact,1:01
+05_US_AI_ML,Rideability,Deterioration Rate,1:02
+05_US_AI_ML,Rideability,Environmental Impact,1:03
+05_US_AI_ML,Rideability,Safety,1:04
+05_US_AI_ML,Rideability,User Costs,1:01
+05_US_AI_ML,Safety,Deterioration Rate,4:01
+05_US_AI_ML,Safety,Environmental Impact,4:01
+05_US_AI_ML,User Costs,Deterioration Rate,1:01
+05_US_AI_ML,User Costs,Environmental Impact,1:04
+05_US_AI_ML,User Costs,Safety,1:01
+06_US_CC_ML,Deterioration Rate,Environmental Impact,1:01
+06_US_CC_ML,Rideability,Deterioration Rate,1:05
+06_US_CC_ML,Rideability,Environmental Impact,3:01
+06_US_CC_ML,Rideability,Safety,1:05
+06_US_CC_ML,Rideability,User Costs,1:05
+06_US_CC_ML,Safety,Deterioration Rate,1:01
+06_US_CC_ML,Safety,Environmental Impact,1:01
+06_US_CC_ML,User Costs,Deterioration Rate,1:03
+06_US_CC_ML,User Costs,Environmental Impact,1:01
+06_US_CC_ML,User Costs,Safety,1:04
+07_GR_CF_ML,Deterioration Rate,Environmental Impact,1:04
+07_GR_CF_ML,Rideability,Deterioration Rate,4:01
+07_GR_CF_ML,Rideability,Environmental Impact,1:01
+07_GR_CF_ML,Rideability,Safety,1:09
+07_GR_CF_ML,Rideability,User Costs,5:01
+07_GR_CF_ML,Safety,Deterioration Rate,4:01
+07_GR_CF_ML,Safety,Environmental Impact,4:01
+07_GR_CF_ML,User Costs,Deterioration Rate,3:01
+07_GR_CF_ML,User Costs,Environmental Impact,1:02
+07_GR_CF_ML,User Costs,Safety,1:07
+08_US_CF_ML,Deterioration Rate,Environmental Impact,1:01
+08_US_CF_ML,Rideability,Deterioration Rate,2:01
+08_US_CF_ML,Rideability,Environmental Impact,2:01
+08_US_CF_ML,Rideability,Safety,1:04
+08_US_CF_ML,Rideability,User Costs,4:01
+08_US_CF_ML,Safety,Deterioration Rate,3:01
+08_US_CF_ML,Safety,Environmental Impact,4:01
+08_US_CF_ML,User Costs,Deterioration Rate,1:01
+08_US_CF_ML,User Costs,Environmental Impact,1:01
+08_US_CF_ML,User Costs,Safety,1:04
+09_US_GA_ML,Deterioration Rate,Environmental Impact,6:01
+09_US_GA_ML,Rideability,Deterioration Rate,1:06
+09_US_GA_ML,Rideability,Environmental Impact,1:01
+09_US_GA_ML,Rideability,Safety,1:09
+09_US_GA_ML,Rideability,User Costs,3:01
+09_US_GA_ML,Safety,Deterioration Rate,7:01
+09_US_GA_ML,Safety,Environmental Impact,9:01
+09_US_GA_ML,User Costs,Deterioration Rate,1:06
+09_US_GA_ML,User Costs,Environmental Impact,4:01
+09_US_GA_ML,User Costs,Safety,1:06
+10_US_GA_ML,Deterioration Rate,Environmental Impact,4:01
+10_US_GA_ML,Rideability,Deterioration Rate,1:03
+10_US_GA_ML,Rideability,Environmental Impact,5:01
+10_US_GA_ML,Rideability,Safety,1:07
+10_US_GA_ML,Rideability,User Costs,5:01
+10_US_GA_ML,Safety,Deterioration Rate,6:01
+10_US_GA_ML,Safety,Environmental Impact,6:01
+10_US_GA_ML,User Costs,Deterioration Rate,1:04
+10_US_GA_ML,User Costs,Environmental Impact,7:01
+10_US_GA_ML,User Costs,Safety,1:04
+11_QR_CF_ML,Deterioration Rate,Environmental Impact,6:01
+11_QR_CF_ML,Rideability,Deterioration Rate,6:01
+11_QR_CF_ML,Rideability,Environmental Impact,6:01
+11_QR_CF_ML,Rideability,Safety,1:05
+11_QR_CF_ML,Rideability,User Costs,7:01
+11_QR_CF_ML,Safety,Deterioration Rate,8:01
+11_QR_CF_ML,Safety,Environmental Impact,9:01
+11_QR_CF_ML,User Costs,Deterioration Rate,1:04
+11_QR_CF_ML,User Costs,Environmental Impact,6:01
+11_QR_CF_ML,User Costs,Safety,1:05
+12_US_GA_ML,Deterioration Rate,Environmental Impact,1:01
+12_US_GA_ML,Rideability,Deterioration Rate,1:05
+12_US_GA_ML,Rideability,Environmental Impact,1:01
+12_US_GA_ML,Rideability,Safety,1:05
+12_US_GA_ML,Rideability,User Costs,1:01
+12_US_GA_ML,Safety,Deterioration Rate,5:01
+12_US_GA_ML,Safety,Environmental Impact,1:01
+12_US_GA_ML,User Costs,Deterioration Rate,1:05
+12_US_GA_ML,User Costs,Environmental Impact,1:01
+12_US_GA_ML,User Costs,Safety,1:06

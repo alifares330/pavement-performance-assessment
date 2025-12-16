@@ -1,0 +1,41 @@
+Defect,Criteria,Weight
+Surface Cracks,Deterioration Rate,0.134001686
+Roughness,Deterioration Rate,0.118522151
+Rutting,Deterioration Rate,0.119114255
+Pothole,Deterioration Rate,0.13683016
+Raveling,Deterioration Rate,0.103573586
+Bleeding,Deterioration Rate,0.091814744
+Thickness deficiency,Deterioration Rate,0.145768133
+Subsurface Cracks,Deterioration Rate,0.150375283
+Surface Cracks,Environmental Impact,0.110725428
+Roughness,Environmental Impact,0.145220114
+Rutting,Environmental Impact,0.128453249
+Pothole,Environmental Impact,0.146708457
+Raveling,Environmental Impact,0.107932479
+Bleeding,Environmental Impact,0.126560871
+Thickness deficiency,Environmental Impact,0.127864537
+Subsurface Cracks,Environmental Impact,0.106534865
+Surface Cracks,Rideability,0.134207336
+Roughness,Rideability,0.171410204
+Rutting,Rideability,0.146075494
+Pothole,Rideability,0.173821992
+Raveling,Rideability,0.086257697
+Bleeding,Rideability,0.097481982
+Thickness deficiency,Rideability,0.089234851
+Subsurface Cracks,Rideability,0.101510444
+Surface Cracks,Safety,0.110804599
+Roughness,Safety,0.122435116
+Rutting,Safety,0.155128636
+Pothole,Safety,0.158779824
+Raveling,Safety,0.131695053
+Bleeding,Safety,0.136279537
+Thickness deficiency,Safety,0.095272893
+Subsurface Cracks,Safety,0.089604344
+Surface Cracks,User Costs,0.113826329
+Roughness,User Costs,0.165610269
+Rutting,User Costs,0.150930966
+Pothole,User Costs,0.201317844
+Raveling,User Costs,0.092549727
+Bleeding,User Costs,0.09574436
+Thickness deficiency,User Costs,0.08128855
+Subsurface Cracks,User Costs,0.098731955

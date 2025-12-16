@@ -1,0 +1,9 @@
+Distress Parameter,Good (100),Good (80),Fair (50),Very Poor (25),Terminal Value (0)
+Roughness,0,1.5,2.7,3.9,5
+Rutting,0,5,10,15,20
+Cracking,0,5,20,27.5,35
+Potholes,0,0.1,0.5,2,5
+Bleeding,0,0.1,2,10,30
+Raveling,0,0.1,2,10,30
+Subsurface Cracking,100,75,50,25,0
+Thickness Deficiency,100,75,50,25,0

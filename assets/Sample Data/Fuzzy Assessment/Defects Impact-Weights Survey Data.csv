@@ -1,0 +1,541 @@
+SurveyID,Performance Criteria,Defect,Rating
+01_CA_CF_ML,Deterioration Rate,Bleeding,6
+01_CA_CF_ML,Deterioration Rate,Thickness deficiency,8
+01_CA_CF_ML,Deterioration Rate,Pothole,6
+01_CA_CF_ML,Deterioration Rate,Raveling,8
+01_CA_CF_ML,Deterioration Rate,Roughness,8
+01_CA_CF_ML,Deterioration Rate,Rutting,4
+01_CA_CF_ML,Deterioration Rate,Skid Resistance,5
+01_CA_CF_ML,Deterioration Rate,Subsurface Cracks,5
+01_CA_CF_ML,Deterioration Rate,Surface Cracks,4
+01_CA_CF_ML,Environmental Impact,Bleeding,10
+01_CA_CF_ML,Environmental Impact,Thickness deficiency,7
+01_CA_CF_ML,Environmental Impact,Pothole,6
+01_CA_CF_ML,Environmental Impact,Raveling,5
+01_CA_CF_ML,Environmental Impact,Roughness,6
+01_CA_CF_ML,Environmental Impact,Rutting,2
+01_CA_CF_ML,Environmental Impact,Skid Resistance,6
+01_CA_CF_ML,Environmental Impact,Subsurface Cracks,5
+01_CA_CF_ML,Environmental Impact,Surface Cracks,2
+01_CA_CF_ML,Rideability,Bleeding,3
+01_CA_CF_ML,Rideability,Thickness deficiency,1
+01_CA_CF_ML,Rideability,Pothole,3
+01_CA_CF_ML,Rideability,Raveling,1
+01_CA_CF_ML,Rideability,Roughness,4
+01_CA_CF_ML,Rideability,Rutting,2
+01_CA_CF_ML,Rideability,Skid Resistance,5
+01_CA_CF_ML,Rideability,Subsurface Cracks,3
+01_CA_CF_ML,Rideability,Surface Cracks,4
+01_CA_CF_ML,Safety,Bleeding,3
+01_CA_CF_ML,Safety,Thickness deficiency,5
+01_CA_CF_ML,Safety,Pothole,6
+01_CA_CF_ML,Safety,Raveling,7
+01_CA_CF_ML,Safety,Roughness,1
+01_CA_CF_ML,Safety,Rutting,4
+01_CA_CF_ML,Safety,Skid Resistance,3
+01_CA_CF_ML,Safety,Subsurface Cracks,5
+01_CA_CF_ML,Safety,Surface Cracks,6
+01_CA_CF_ML,User Costs,Bleeding,4
+01_CA_CF_ML,User Costs,Thickness deficiency,1
+01_CA_CF_ML,User Costs,Pothole,6
+01_CA_CF_ML,User Costs,Raveling,2
+01_CA_CF_ML,User Costs,Roughness,1
+01_CA_CF_ML,User Costs,Rutting,8
+01_CA_CF_ML,User Costs,Skid Resistance,6
+01_CA_CF_ML,User Costs,Subsurface Cracks,5
+01_CA_CF_ML,User Costs,Surface Cracks,4
+02_CA_CF_ML,Deterioration Rate,Bleeding,3
+02_CA_CF_ML,Deterioration Rate,Thickness deficiency,7
+02_CA_CF_ML,Deterioration Rate,Pothole,8
+02_CA_CF_ML,Deterioration Rate,Raveling,3
+02_CA_CF_ML,Deterioration Rate,Roughness,4
+02_CA_CF_ML,Deterioration Rate,Rutting,7
+02_CA_CF_ML,Deterioration Rate,Skid Resistance,4
+02_CA_CF_ML,Deterioration Rate,Subsurface Cracks,7
+02_CA_CF_ML,Deterioration Rate,Surface Cracks,8
+02_CA_CF_ML,Environmental Impact,Bleeding,1
+02_CA_CF_ML,Environmental Impact,Thickness deficiency,1
+02_CA_CF_ML,Environmental Impact,Pothole,3
+02_CA_CF_ML,Environmental Impact,Raveling,1
+02_CA_CF_ML,Environmental Impact,Roughness,3
+02_CA_CF_ML,Environmental Impact,Rutting,3
+02_CA_CF_ML,Environmental Impact,Skid Resistance,3
+02_CA_CF_ML,Environmental Impact,Subsurface Cracks,1
+02_CA_CF_ML,Environmental Impact,Surface Cracks,3
+02_CA_CF_ML,Rideability,Bleeding,2
+02_CA_CF_ML,Rideability,Thickness deficiency,3
+02_CA_CF_ML,Rideability,Pothole,9
+02_CA_CF_ML,Rideability,Raveling,3
+02_CA_CF_ML,Rideability,Roughness,8
+02_CA_CF_ML,Rideability,Rutting,5
+02_CA_CF_ML,Rideability,Skid Resistance,1
+02_CA_CF_ML,Rideability,Subsurface Cracks,3
+02_CA_CF_ML,Rideability,Surface Cracks,6
+02_CA_CF_ML,Safety,Bleeding,8
+02_CA_CF_ML,Safety,Thickness deficiency,1
+02_CA_CF_ML,Safety,Pothole,8
+02_CA_CF_ML,Safety,Raveling,4
+02_CA_CF_ML,Safety,Roughness,4
+02_CA_CF_ML,Safety,Rutting,8
+02_CA_CF_ML,Safety,Skid Resistance,10
+02_CA_CF_ML,Safety,Subsurface Cracks,1
+02_CA_CF_ML,Safety,Surface Cracks,8
+02_CA_CF_ML,User Costs,Bleeding,1
+02_CA_CF_ML,User Costs,Thickness deficiency,1
+02_CA_CF_ML,User Costs,Pothole,8
+02_CA_CF_ML,User Costs,Raveling,3
+02_CA_CF_ML,User Costs,Roughness,8
+02_CA_CF_ML,User Costs,Rutting,3
+02_CA_CF_ML,User Costs,Skid Resistance,3
+02_CA_CF_ML,User Costs,Subsurface Cracks,1
+02_CA_CF_ML,User Costs,Surface Cracks,4
+03_UK_CF_ML,Deterioration Rate,Bleeding,6
+03_UK_CF_ML,Deterioration Rate,Thickness deficiency,9
+03_UK_CF_ML,Deterioration Rate,Pothole,8
+03_UK_CF_ML,Deterioration Rate,Raveling,6
+03_UK_CF_ML,Deterioration Rate,Roughness,9
+03_UK_CF_ML,Deterioration Rate,Rutting,10
+03_UK_CF_ML,Deterioration Rate,Skid Resistance,5
+03_UK_CF_ML,Deterioration Rate,Subsurface Cracks,10
+03_UK_CF_ML,Deterioration Rate,Surface Cracks,6
+03_UK_CF_ML,Environmental Impact,Bleeding,5
+03_UK_CF_ML,Environmental Impact,Thickness deficiency,9
+03_UK_CF_ML,Environmental Impact,Pothole,8
+03_UK_CF_ML,Environmental Impact,Raveling,5
+03_UK_CF_ML,Environmental Impact,Roughness,4
+03_UK_CF_ML,Environmental Impact,Rutting,7
+03_UK_CF_ML,Environmental Impact,Skid Resistance,5
+03_UK_CF_ML,Environmental Impact,Subsurface Cracks,7
+03_UK_CF_ML,Environmental Impact,Surface Cracks,5
+03_UK_CF_ML,Rideability,Bleeding,9
+03_UK_CF_ML,Rideability,Thickness deficiency,3
+03_UK_CF_ML,Rideability,Pothole,9
+03_UK_CF_ML,Rideability,Raveling,9
+03_UK_CF_ML,Rideability,Roughness,10
+03_UK_CF_ML,Rideability,Rutting,7
+03_UK_CF_ML,Rideability,Skid Resistance,10
+03_UK_CF_ML,Rideability,Subsurface Cracks,7
+03_UK_CF_ML,Rideability,Surface Cracks,4
+03_UK_CF_ML,Safety,Bleeding,10
+03_UK_CF_ML,Safety,Thickness deficiency,6
+03_UK_CF_ML,Safety,Pothole,9
+03_UK_CF_ML,Safety,Raveling,10
+03_UK_CF_ML,Safety,Roughness,10
+03_UK_CF_ML,Safety,Rutting,10
+03_UK_CF_ML,Safety,Skid Resistance,10
+03_UK_CF_ML,Safety,Subsurface Cracks,9
+03_UK_CF_ML,Safety,Surface Cracks,5
+03_UK_CF_ML,User Costs,Bleeding,7
+03_UK_CF_ML,User Costs,Thickness deficiency,2
+03_UK_CF_ML,User Costs,Pothole,9
+03_UK_CF_ML,User Costs,Raveling,7
+03_UK_CF_ML,User Costs,Roughness,7
+03_UK_CF_ML,User Costs,Rutting,7
+03_UK_CF_ML,User Costs,Skid Resistance,8
+03_UK_CF_ML,User Costs,Subsurface Cracks,6
+03_UK_CF_ML,User Costs,Surface Cracks,5
+04_CA_CF_ML,Deterioration Rate,Bleeding,4
+04_CA_CF_ML,Deterioration Rate,Thickness deficiency,4
+04_CA_CF_ML,Deterioration Rate,Pothole,5
+04_CA_CF_ML,Deterioration Rate,Raveling,4
+04_CA_CF_ML,Deterioration Rate,Roughness,6
+04_CA_CF_ML,Deterioration Rate,Rutting,6
+04_CA_CF_ML,Deterioration Rate,Skid Resistance,6
+04_CA_CF_ML,Deterioration Rate,Subsurface Cracks,4
+04_CA_CF_ML,Deterioration Rate,Surface Cracks,4
+04_CA_CF_ML,Environmental Impact,Bleeding,3
+04_CA_CF_ML,Environmental Impact,Thickness deficiency,3
+04_CA_CF_ML,Environmental Impact,Pothole,3
+04_CA_CF_ML,Environmental Impact,Raveling,3
+04_CA_CF_ML,Environmental Impact,Roughness,3
+04_CA_CF_ML,Environmental Impact,Rutting,2
+04_CA_CF_ML,Environmental Impact,Skid Resistance,4
+04_CA_CF_ML,Environmental Impact,Subsurface Cracks,3
+04_CA_CF_ML,Environmental Impact,Surface Cracks,3
+04_CA_CF_ML,Rideability,Bleeding,3
+04_CA_CF_ML,Rideability,Thickness deficiency,5
+04_CA_CF_ML,Rideability,Pothole,6
+04_CA_CF_ML,Rideability,Raveling,3
+04_CA_CF_ML,Rideability,Roughness,6
+04_CA_CF_ML,Rideability,Rutting,5
+04_CA_CF_ML,Rideability,Skid Resistance,8
+04_CA_CF_ML,Rideability,Subsurface Cracks,3
+04_CA_CF_ML,Rideability,Surface Cracks,3
+04_CA_CF_ML,Safety,Bleeding,3
+04_CA_CF_ML,Safety,Thickness deficiency,5
+04_CA_CF_ML,Safety,Pothole,4
+04_CA_CF_ML,Safety,Raveling,3
+04_CA_CF_ML,Safety,Roughness,7
+04_CA_CF_ML,Safety,Rutting,7
+04_CA_CF_ML,Safety,Skid Resistance,9
+04_CA_CF_ML,Safety,Subsurface Cracks,3
+04_CA_CF_ML,Safety,Surface Cracks,3
+04_CA_CF_ML,User Costs,Bleeding,4
+04_CA_CF_ML,User Costs,Thickness deficiency,4
+04_CA_CF_ML,User Costs,Pothole,5
+04_CA_CF_ML,User Costs,Raveling,4
+04_CA_CF_ML,User Costs,Roughness,4
+04_CA_CF_ML,User Costs,Rutting,4
+04_CA_CF_ML,User Costs,Skid Resistance,6
+04_CA_CF_ML,User Costs,Subsurface Cracks,4
+04_CA_CF_ML,User Costs,Surface Cracks,2
+05_US_AI_ML,Deterioration Rate,Bleeding,9
+05_US_AI_ML,Deterioration Rate,Thickness deficiency,9
+05_US_AI_ML,Deterioration Rate,Pothole,10
+05_US_AI_ML,Deterioration Rate,Raveling,9
+05_US_AI_ML,Deterioration Rate,Roughness,5
+05_US_AI_ML,Deterioration Rate,Rutting,7
+05_US_AI_ML,Deterioration Rate,Skid Resistance,3
+05_US_AI_ML,Deterioration Rate,Subsurface Cracks,10
+05_US_AI_ML,Deterioration Rate,Surface Cracks,9
+05_US_AI_ML,Environmental Impact,Bleeding,9
+05_US_AI_ML,Environmental Impact,Thickness deficiency,7
+05_US_AI_ML,Environmental Impact,Pothole,7
+05_US_AI_ML,Environmental Impact,Raveling,7
+05_US_AI_ML,Environmental Impact,Roughness,4
+05_US_AI_ML,Environmental Impact,Rutting,4
+05_US_AI_ML,Environmental Impact,Skid Resistance,3
+05_US_AI_ML,Environmental Impact,Subsurface Cracks,7
+05_US_AI_ML,Environmental Impact,Surface Cracks,5
+05_US_AI_ML,Rideability,Bleeding,7
+05_US_AI_ML,Rideability,Thickness deficiency,4
+05_US_AI_ML,Rideability,Pothole,9
+05_US_AI_ML,Rideability,Raveling,5
+05_US_AI_ML,Rideability,Roughness,6
+05_US_AI_ML,Rideability,Rutting,8
+05_US_AI_ML,Rideability,Skid Resistance,7
+05_US_AI_ML,Rideability,Subsurface Cracks,7
+05_US_AI_ML,Rideability,Surface Cracks,8
+05_US_AI_ML,Safety,Bleeding,9
+05_US_AI_ML,Safety,Thickness deficiency,7
+05_US_AI_ML,Safety,Pothole,10
+05_US_AI_ML,Safety,Raveling,9
+05_US_AI_ML,Safety,Roughness,7
+05_US_AI_ML,Safety,Rutting,7
+05_US_AI_ML,Safety,Skid Resistance,9
+05_US_AI_ML,Safety,Subsurface Cracks,8
+05_US_AI_ML,Safety,Surface Cracks,7
+05_US_AI_ML,User Costs,Bleeding,7
+05_US_AI_ML,User Costs,Thickness deficiency,3
+05_US_AI_ML,User Costs,Pothole,7
+05_US_AI_ML,User Costs,Raveling,5
+05_US_AI_ML,User Costs,Roughness,5
+05_US_AI_ML,User Costs,Rutting,4
+05_US_AI_ML,User Costs,Skid Resistance,7
+05_US_AI_ML,User Costs,Subsurface Cracks,3
+05_US_AI_ML,User Costs,Surface Cracks,8
+06_US_CC_ML,Deterioration Rate,Bleeding,7
+06_US_CC_ML,Deterioration Rate,Thickness deficiency,5
+06_US_CC_ML,Deterioration Rate,Pothole,8
+06_US_CC_ML,Deterioration Rate,Raveling,4
+06_US_CC_ML,Deterioration Rate,Roughness,4
+06_US_CC_ML,Deterioration Rate,Rutting,6
+06_US_CC_ML,Deterioration Rate,Skid Resistance,4
+06_US_CC_ML,Deterioration Rate,Subsurface Cracks,5
+06_US_CC_ML,Deterioration Rate,Surface Cracks,4
+06_US_CC_ML,Environmental Impact,Bleeding,7
+06_US_CC_ML,Environmental Impact,Thickness deficiency,5
+06_US_CC_ML,Environmental Impact,Pothole,8
+06_US_CC_ML,Environmental Impact,Raveling,4
+06_US_CC_ML,Environmental Impact,Roughness,4
+06_US_CC_ML,Environmental Impact,Rutting,4
+06_US_CC_ML,Environmental Impact,Skid Resistance,5
+06_US_CC_ML,Environmental Impact,Subsurface Cracks,5
+06_US_CC_ML,Environmental Impact,Surface Cracks,4
+06_US_CC_ML,Rideability,Bleeding,7
+06_US_CC_ML,Rideability,Thickness deficiency,5
+06_US_CC_ML,Rideability,Pothole,8
+06_US_CC_ML,Rideability,Raveling,4
+06_US_CC_ML,Rideability,Roughness,4
+06_US_CC_ML,Rideability,Rutting,7
+06_US_CC_ML,Rideability,Skid Resistance,8
+06_US_CC_ML,Rideability,Subsurface Cracks,5
+06_US_CC_ML,Rideability,Surface Cracks,4
+06_US_CC_ML,Safety,Bleeding,7
+06_US_CC_ML,Safety,Thickness deficiency,5
+06_US_CC_ML,Safety,Pothole,8
+06_US_CC_ML,Safety,Raveling,4
+06_US_CC_ML,Safety,Roughness,4
+06_US_CC_ML,Safety,Rutting,7
+06_US_CC_ML,Safety,Skid Resistance,8
+06_US_CC_ML,Safety,Subsurface Cracks,5
+06_US_CC_ML,Safety,Surface Cracks,2
+06_US_CC_ML,User Costs,Bleeding,7
+06_US_CC_ML,User Costs,Thickness deficiency,5
+06_US_CC_ML,User Costs,Pothole,8
+06_US_CC_ML,User Costs,Raveling,4
+06_US_CC_ML,User Costs,Roughness,4
+06_US_CC_ML,User Costs,Rutting,7
+06_US_CC_ML,User Costs,Skid Resistance,8
+06_US_CC_ML,User Costs,Subsurface Cracks,5
+06_US_CC_ML,User Costs,Surface Cracks,4
+07_GR_CF_ML,Deterioration Rate,Bleeding,1
+07_GR_CF_ML,Deterioration Rate,Thickness deficiency,7
+07_GR_CF_ML,Deterioration Rate,Pothole,2
+07_GR_CF_ML,Deterioration Rate,Raveling,3
+07_GR_CF_ML,Deterioration Rate,Roughness,5
+07_GR_CF_ML,Deterioration Rate,Rutting,6
+07_GR_CF_ML,Deterioration Rate,Skid Resistance,10
+07_GR_CF_ML,Deterioration Rate,Subsurface Cracks,8
+07_GR_CF_ML,Deterioration Rate,Surface Cracks,7
+07_GR_CF_ML,Environmental Impact,Bleeding,2
+07_GR_CF_ML,Environmental Impact,Thickness deficiency,7
+07_GR_CF_ML,Environmental Impact,Pothole,5
+07_GR_CF_ML,Environmental Impact,Raveling,6
+07_GR_CF_ML,Environmental Impact,Roughness,5
+07_GR_CF_ML,Environmental Impact,Rutting,5
+07_GR_CF_ML,Environmental Impact,Skid Resistance,10
+07_GR_CF_ML,Environmental Impact,Subsurface Cracks,7
+07_GR_CF_ML,Environmental Impact,Surface Cracks,7
+07_GR_CF_ML,Rideability,Bleeding,5
+07_GR_CF_ML,Rideability,Thickness deficiency,3
+07_GR_CF_ML,Rideability,Pothole,3
+07_GR_CF_ML,Rideability,Raveling,5
+07_GR_CF_ML,Rideability,Roughness,5
+07_GR_CF_ML,Rideability,Rutting,10
+07_GR_CF_ML,Rideability,Skid Resistance,7
+07_GR_CF_ML,Rideability,Subsurface Cracks,2
+07_GR_CF_ML,Rideability,Surface Cracks,9
+07_GR_CF_ML,Safety,Bleeding,7
+07_GR_CF_ML,Safety,Thickness deficiency,3
+07_GR_CF_ML,Safety,Pothole,5
+07_GR_CF_ML,Safety,Raveling,10
+07_GR_CF_ML,Safety,Roughness,8
+07_GR_CF_ML,Safety,Rutting,10
+07_GR_CF_ML,Safety,Skid Resistance,10
+07_GR_CF_ML,Safety,Subsurface Cracks,1
+07_GR_CF_ML,Safety,Surface Cracks,5
+07_GR_CF_ML,User Costs,Bleeding,3
+07_GR_CF_ML,User Costs,Thickness deficiency,1
+07_GR_CF_ML,User Costs,Pothole,3
+07_GR_CF_ML,User Costs,Raveling,3
+07_GR_CF_ML,User Costs,Roughness,10
+07_GR_CF_ML,User Costs,Rutting,5
+07_GR_CF_ML,User Costs,Skid Resistance,7
+07_GR_CF_ML,User Costs,Subsurface Cracks,3
+07_GR_CF_ML,User Costs,Surface Cracks,5
+08_US_CF_ML,Deterioration Rate,Bleeding,3
+08_US_CF_ML,Deterioration Rate,Thickness deficiency,9
+08_US_CF_ML,Deterioration Rate,Pothole,7
+08_US_CF_ML,Deterioration Rate,Raveling,5
+08_US_CF_ML,Deterioration Rate,Roughness,6
+08_US_CF_ML,Deterioration Rate,Rutting,8
+08_US_CF_ML,Deterioration Rate,Skid Resistance,1
+08_US_CF_ML,Deterioration Rate,Subsurface Cracks,10
+08_US_CF_ML,Deterioration Rate,Surface Cracks,7
+08_US_CF_ML,Environmental Impact,Bleeding,1
+08_US_CF_ML,Environmental Impact,Thickness deficiency,1
+08_US_CF_ML,Environmental Impact,Pothole,6
+08_US_CF_ML,Environmental Impact,Raveling,2
+08_US_CF_ML,Environmental Impact,Roughness,7
+08_US_CF_ML,Environmental Impact,Rutting,4
+08_US_CF_ML,Environmental Impact,Skid Resistance,3
+08_US_CF_ML,Environmental Impact,Subsurface Cracks,1
+08_US_CF_ML,Environmental Impact,Surface Cracks,3
+08_US_CF_ML,Rideability,Bleeding,1
+08_US_CF_ML,Rideability,Thickness deficiency,2
+08_US_CF_ML,Rideability,Pothole,7
+08_US_CF_ML,Rideability,Raveling,1
+08_US_CF_ML,Rideability,Roughness,10
+08_US_CF_ML,Rideability,Rutting,7
+08_US_CF_ML,Rideability,Skid Resistance,1
+08_US_CF_ML,Rideability,Subsurface Cracks,3
+08_US_CF_ML,Rideability,Surface Cracks,3
+08_US_CF_ML,Safety,Bleeding,4
+08_US_CF_ML,Safety,Thickness deficiency,1
+08_US_CF_ML,Safety,Pothole,7
+08_US_CF_ML,Safety,Raveling,4
+08_US_CF_ML,Safety,Roughness,5
+08_US_CF_ML,Safety,Rutting,9
+08_US_CF_ML,Safety,Skid Resistance,9
+08_US_CF_ML,Safety,Subsurface Cracks,1
+08_US_CF_ML,Safety,Surface Cracks,3
+08_US_CF_ML,User Costs,Bleeding,1
+08_US_CF_ML,User Costs,Thickness deficiency,1
+08_US_CF_ML,User Costs,Pothole,9
+08_US_CF_ML,User Costs,Raveling,1
+08_US_CF_ML,User Costs,Roughness,10
+08_US_CF_ML,User Costs,Rutting,5
+08_US_CF_ML,User Costs,Skid Resistance,5
+08_US_CF_ML,User Costs,Subsurface Cracks,1
+08_US_CF_ML,User Costs,Surface Cracks,3
+09_US_GA_ML,Deterioration Rate,Bleeding,5
+09_US_GA_ML,Deterioration Rate,Thickness deficiency,9
+09_US_GA_ML,Deterioration Rate,Pothole,8
+09_US_GA_ML,Deterioration Rate,Raveling,6
+09_US_GA_ML,Deterioration Rate,Roughness,6
+09_US_GA_ML,Deterioration Rate,Rutting,4
+09_US_GA_ML,Deterioration Rate,Skid Resistance,2
+09_US_GA_ML,Deterioration Rate,Subsurface Cracks,8
+09_US_GA_ML,Deterioration Rate,Surface Cracks,7
+09_US_GA_ML,Environmental Impact,Bleeding,1
+09_US_GA_ML,Environmental Impact,Thickness deficiency,1
+09_US_GA_ML,Environmental Impact,Pothole,1
+09_US_GA_ML,Environmental Impact,Raveling,1
+09_US_GA_ML,Environmental Impact,Roughness,1
+09_US_GA_ML,Environmental Impact,Rutting,3
+09_US_GA_ML,Environmental Impact,Skid Resistance,1
+09_US_GA_ML,Environmental Impact,Subsurface Cracks,1
+09_US_GA_ML,Environmental Impact,Surface Cracks,1
+09_US_GA_ML,Rideability,Bleeding,2
+09_US_GA_ML,Rideability,Thickness deficiency,4
+09_US_GA_ML,Rideability,Pothole,9
+09_US_GA_ML,Rideability,Raveling,2
+09_US_GA_ML,Rideability,Roughness,7
+09_US_GA_ML,Rideability,Rutting,5
+09_US_GA_ML,Rideability,Skid Resistance,4
+09_US_GA_ML,Rideability,Subsurface Cracks,4
+09_US_GA_ML,Rideability,Surface Cracks,4
+09_US_GA_ML,Safety,Bleeding,7
+09_US_GA_ML,Safety,Thickness deficiency,4
+09_US_GA_ML,Safety,Pothole,5
+09_US_GA_ML,Safety,Raveling,5
+09_US_GA_ML,Safety,Roughness,4
+09_US_GA_ML,Safety,Rutting,5
+09_US_GA_ML,Safety,Skid Resistance,9
+09_US_GA_ML,Safety,Subsurface Cracks,3
+09_US_GA_ML,Safety,Surface Cracks,3
+09_US_GA_ML,User Costs,Bleeding,1
+09_US_GA_ML,User Costs,Thickness deficiency,4
+09_US_GA_ML,User Costs,Pothole,7
+09_US_GA_ML,User Costs,Raveling,1
+09_US_GA_ML,User Costs,Roughness,4
+09_US_GA_ML,User Costs,Rutting,5
+09_US_GA_ML,User Costs,Skid Resistance,3
+09_US_GA_ML,User Costs,Subsurface Cracks,4
+09_US_GA_ML,User Costs,Surface Cracks,2
+10_US_GA_ML,Deterioration Rate,Bleeding,4
+10_US_GA_ML,Deterioration Rate,Thickness deficiency,8
+10_US_GA_ML,Deterioration Rate,Pothole,5
+10_US_GA_ML,Deterioration Rate,Raveling,5
+10_US_GA_ML,Deterioration Rate,Roughness,6
+10_US_GA_ML,Deterioration Rate,Rutting,2
+10_US_GA_ML,Deterioration Rate,Skid Resistance,5
+10_US_GA_ML,Deterioration Rate,Subsurface Cracks,8
+10_US_GA_ML,Deterioration Rate,Surface Cracks,6
+10_US_GA_ML,Environmental Impact,Bleeding,5
+10_US_GA_ML,Environmental Impact,Thickness deficiency,4
+10_US_GA_ML,Environmental Impact,Pothole,2
+10_US_GA_ML,Environmental Impact,Raveling,2
+10_US_GA_ML,Environmental Impact,Roughness,5
+10_US_GA_ML,Environmental Impact,Rutting,3
+10_US_GA_ML,Environmental Impact,Skid Resistance,6
+10_US_GA_ML,Environmental Impact,Subsurface Cracks,1
+10_US_GA_ML,Environmental Impact,Surface Cracks,2
+10_US_GA_ML,Rideability,Bleeding,4
+10_US_GA_ML,Rideability,Thickness deficiency,5
+10_US_GA_ML,Rideability,Pothole,8
+10_US_GA_ML,Rideability,Raveling,3
+10_US_GA_ML,Rideability,Roughness,7
+10_US_GA_ML,Rideability,Rutting,5
+10_US_GA_ML,Rideability,Skid Resistance,3
+10_US_GA_ML,Rideability,Subsurface Cracks,5
+10_US_GA_ML,Rideability,Surface Cracks,7
+10_US_GA_ML,Safety,Bleeding,5
+10_US_GA_ML,Safety,Thickness deficiency,5
+10_US_GA_ML,Safety,Pothole,6
+10_US_GA_ML,Safety,Raveling,7
+10_US_GA_ML,Safety,Roughness,6
+10_US_GA_ML,Safety,Rutting,6
+10_US_GA_ML,Safety,Skid Resistance,8
+10_US_GA_ML,Safety,Subsurface Cracks,4
+10_US_GA_ML,Safety,Surface Cracks,6
+10_US_GA_ML,User Costs,Bleeding,2
+10_US_GA_ML,User Costs,Thickness deficiency,3
+10_US_GA_ML,User Costs,Pothole,8
+10_US_GA_ML,User Costs,Raveling,2
+10_US_GA_ML,User Costs,Roughness,6
+10_US_GA_ML,User Costs,Rutting,6
+10_US_GA_ML,User Costs,Skid Resistance,5
+10_US_GA_ML,User Costs,Subsurface Cracks,4
+10_US_GA_ML,User Costs,Surface Cracks,4
+11_QR_CF_ML,Deterioration Rate,Bleeding,4
+11_QR_CF_ML,Deterioration Rate,Thickness deficiency,5
+11_QR_CF_ML,Deterioration Rate,Pothole,6
+11_QR_CF_ML,Deterioration Rate,Raveling,6
+11_QR_CF_ML,Deterioration Rate,Roughness,6
+11_QR_CF_ML,Deterioration Rate,Rutting,6
+11_QR_CF_ML,Deterioration Rate,Skid Resistance,7
+11_QR_CF_ML,Deterioration Rate,Subsurface Cracks,8
+11_QR_CF_ML,Deterioration Rate,Surface Cracks,8
+11_QR_CF_ML,Environmental Impact,Bleeding,6
+11_QR_CF_ML,Environmental Impact,Thickness deficiency,7
+11_QR_CF_ML,Environmental Impact,Pothole,7
+11_QR_CF_ML,Environmental Impact,Raveling,6
+11_QR_CF_ML,Environmental Impact,Roughness,6
+11_QR_CF_ML,Environmental Impact,Rutting,4
+11_QR_CF_ML,Environmental Impact,Skid Resistance,8
+11_QR_CF_ML,Environmental Impact,Subsurface Cracks,5
+11_QR_CF_ML,Environmental Impact,Surface Cracks,4
+11_QR_CF_ML,Rideability,Bleeding,4
+11_QR_CF_ML,Rideability,Thickness deficiency,7
+11_QR_CF_ML,Rideability,Pothole,7
+11_QR_CF_ML,Rideability,Raveling,6
+11_QR_CF_ML,Rideability,Roughness,8
+11_QR_CF_ML,Rideability,Rutting,6
+11_QR_CF_ML,Rideability,Skid Resistance,6
+11_QR_CF_ML,Rideability,Subsurface Cracks,6
+11_QR_CF_ML,Rideability,Surface Cracks,8
+11_QR_CF_ML,Safety,Bleeding,4
+11_QR_CF_ML,Safety,Thickness deficiency,6
+11_QR_CF_ML,Safety,Pothole,7
+11_QR_CF_ML,Safety,Raveling,6
+11_QR_CF_ML,Safety,Roughness,6
+11_QR_CF_ML,Safety,Rutting,4
+11_QR_CF_ML,Safety,Skid Resistance,8
+11_QR_CF_ML,Safety,Subsurface Cracks,7
+11_QR_CF_ML,Safety,Surface Cracks,8
+11_QR_CF_ML,User Costs,Bleeding,4
+11_QR_CF_ML,User Costs,Thickness deficiency,8
+11_QR_CF_ML,User Costs,Pothole,5
+11_QR_CF_ML,User Costs,Raveling,6
+11_QR_CF_ML,User Costs,Roughness,4
+11_QR_CF_ML,User Costs,Rutting,8
+11_QR_CF_ML,User Costs,Skid Resistance,8
+11_QR_CF_ML,User Costs,Subsurface Cracks,4
+11_QR_CF_ML,User Costs,Surface Cracks,6
+12_US_GA_ML,Deterioration Rate,Bleeding,3
+12_US_GA_ML,Deterioration Rate,Thickness deficiency,6
+12_US_GA_ML,Deterioration Rate,Pothole,8
+12_US_GA_ML,Deterioration Rate,Raveling,3
+12_US_GA_ML,Deterioration Rate,Roughness,4
+12_US_GA_ML,Deterioration Rate,Rutting,4
+12_US_GA_ML,Deterioration Rate,Skid Resistance,4
+12_US_GA_ML,Deterioration Rate,Subsurface Cracks,6
+12_US_GA_ML,Deterioration Rate,Surface Cracks,8
+12_US_GA_ML,Environmental Impact,Bleeding,3
+12_US_GA_ML,Environmental Impact,Thickness deficiency,3
+12_US_GA_ML,Environmental Impact,Pothole,3
+12_US_GA_ML,Environmental Impact,Raveling,3
+12_US_GA_ML,Environmental Impact,Roughness,5
+12_US_GA_ML,Environmental Impact,Rutting,3
+12_US_GA_ML,Environmental Impact,Skid Resistance,4
+12_US_GA_ML,Environmental Impact,Subsurface Cracks,3
+12_US_GA_ML,Environmental Impact,Surface Cracks,3
+12_US_GA_ML,Rideability,Bleeding,3
+12_US_GA_ML,Rideability,Thickness deficiency,3
+12_US_GA_ML,Rideability,Pothole,8
+12_US_GA_ML,Rideability,Raveling,4
+12_US_GA_ML,Rideability,Roughness,8
+12_US_GA_ML,Rideability,Rutting,6
+12_US_GA_ML,Rideability,Skid Resistance,3
+12_US_GA_ML,Rideability,Subsurface Cracks,3
+12_US_GA_ML,Rideability,Surface Cracks,6
+12_US_GA_ML,Safety,Bleeding,6
+12_US_GA_ML,Safety,Thickness deficiency,3
+12_US_GA_ML,Safety,Pothole,8
+12_US_GA_ML,Safety,Raveling,3
+12_US_GA_ML,Safety,Roughness,4
+12_US_GA_ML,Safety,Rutting,4
+12_US_GA_ML,Safety,Skid Resistance,10
+12_US_GA_ML,Safety,Subsurface Cracks,3
+12_US_GA_ML,Safety,Surface Cracks,3
+12_US_GA_ML,User Costs,Bleeding,3
+12_US_GA_ML,User Costs,Thickness deficiency,3
+12_US_GA_ML,User Costs,Pothole,10
+12_US_GA_ML,User Costs,Raveling,4
+12_US_GA_ML,User Costs,Roughness,6
+12_US_GA_ML,User Costs,Rutting,3
+12_US_GA_ML,User Costs,Skid Resistance,3
+12_US_GA_ML,User Costs,Subsurface Cracks,3
+12_US_GA_ML,User Costs,Surface Cracks,3
