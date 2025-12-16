@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data | Pavement Analysis Suite</title>
+  <title>Data | Smart Pavement Evaluation</title>
 
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -66,7 +66,7 @@
       text-align: center;
     }
     .header h1 { margin: 0; font-size: 2.6rem; font-weight: 700; }
-    .header p { font-size: 1.1rem; opacity: 0.92; margin-top: 10px; font-weight: 300; }
+    .header p { font-size: 1.2rem; opacity: 0.92; margin-top: 10px; font-weight: 300; }
 
     /* Grid Layout */
     .container {
@@ -87,10 +87,20 @@
       transition: transform 0.3s ease;
       position: relative;
       border-top: 5px solid var(--accent);
+
+      display: flex;             /* ADD */
+      flex-direction: column;    /* ADD */
     }
     .card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
 
-    .card-body { padding: 30px; text-align: center; }
+    .card-body {
+      padding: 30px;
+      text-align: center;
+
+      display: flex;             /* ADD */
+      flex-direction: column;    /* ADD */
+      flex: 1;                   /* ADD: fill available height */
+    }
     .icon-box {
       width: 70px; height: 70px;
       background: #eef2f7;
@@ -110,18 +120,20 @@
     }
 
     /* Buttons */
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 12px 0;
-      background: var(--primary);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-      transition: background 0.2s;
-      text-align: center;
-    }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+    text-align: center;
+    margin-top: auto; /* ADD THIS — KEY LINE */
+  }
+
     .btn:hover { background: #0b3d75; }
 
     /* Footer */
@@ -140,7 +152,7 @@
 <body>
   <div class="topnav">
     <div class="topnav-inner">
-      <div class="brand"><i class="fas fa-layer-group"></i> Pavement Analysis Suite</div>
+      <div class="brand"><i class="fas fa-layer-group"></i> Smart Pavement Evaluation</div>
       <div>
         <a href="index.html">Tools</a>
         <a href="data.html">Data</a>
@@ -151,7 +163,7 @@
 
   <div class="header">
     <h1>Sample Data Downloads</h1>
-    <p>Download curated sample datasets for reproducible demonstrations and testing.</p>
+    <p>Download sample datasets for reproducible demonstrations and testing.</p>
   </div>
 
   <div class="container">
@@ -184,8 +196,8 @@
     <div class="card">
       <div class="card-body">
         <div class="icon-box"><i class="fas fa-project-diagram"></i></div>
-        <h3>Fuzzy Assessment</h3>
-        <p>Sample inputs for IFPI/IDPI computation, including normalization rules, weights, and survey-derived files.</p>
+        <h3>Pavement Performance Assessment</h3>
+        <p>Sample input files for integrated pavement performance assessment, including distress data, normalization rules, and weighting information.</p>
         <a class="btn"
            href="assets/sample-data/fuzzy-assessment/Fuzzy%20Assessment.zip"
            download>Download ZIP</a>
@@ -195,8 +207,9 @@
   </div>
 
   <div class="footer">
-    <p>Principal Researcher: <strong>Ali Fares</strong> (PhD Candidate, PolyU)</p>
-    <p class="muted">Contact: <strong>ali.i.fares@connect.polyu.hk</strong></p>
+    <p>Developed as part of a PhD thesis at The Hong Kong Polytechnic University.</p>
+    <p>Researcher: <strong>Ali Fares</strong> (PhD Candidate, PolyU)</p>
+    <p>Supervisors: <strong>Prof. Tarek Zayed</strong> (PolyU)</p>
   </div>
 </body>
 </html>
