@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data | Pavement Analysis Suite</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #0E4D92;
+      --accent: #A02337;
+      --light: #f4f6f9;
+      --text: #2c3e50;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light);
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+    }
+
+    /* Top Nav */
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(14,77,146,0.96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    .topnav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+    }
+    .topnav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 14px;
+      opacity: 0.95;
+    }
+    .topnav a:hover { opacity: 1; text-decoration: underline; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, var(--primary), #153e6a);
+      color: white;
+      padding: 55px 20px 60px;
+      text-align: center;
+    }
+    .header h1 { margin: 0; font-size: 2.6rem; font-weight: 700; }
+    .header p { font-size: 1.1rem; opacity: 0.92; margin-top: 10px; font-weight: 300; }
+
+    /* Grid Layout */
+    .container {
+      max-width: 1100px;
+      margin: -40px auto 50px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    /* Cards */
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      position: relative;
+      border-top: 5px solid var(--accent);
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
+
+    .card-body { padding: 30px; text-align: center; }
+    .icon-box {
+      width: 70px; height: 70px;
+      background: #eef2f7;
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 30px;
+      margin: 0 auto 20px;
+    }
+    .card h3 { margin: 0 0 10px; color: var(--primary); }
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      min-height: 60px;
+    }
+
+    /* Buttons */
+    .btn-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px 0;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s;
+      text-align: center;
+    }
+    .btn:hover { background: #0b3d75; }
+
+    .btn.secondary {
+      background: #ffffff;
+      color: var(--primary);
+      border: 1px solid #d8deea;
+    }
+    .btn.secondary:hover { background: #f6f8fc; }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 34px 20px 40px;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      background: #fff;
+    }
+    .footer strong { color: var(--primary); }
+
+    .note {
+      max-width: 1100px;
+      margin: 0 auto 10px;
+      padding: 0 20px;
+      color: #6b7280;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <div class="topnav-inner">
+      <div class="brand"><i class="fas fa-layer-group"></i> Pavement Analysis Suite</div>
+      <div>
+        <a href="index.html">Tools</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1>Sample Data Downloads</h1>
+    <p>Download curated sample datasets for reproducible demonstrations and testing.</p>
+  </div>
+
+  <p class="note">
+    If a download link opens a folder view, click the file name to download it directly.
+  </p>
+
+  <div class="container">
+
+    <!-- Crack Segmentation -->
+    <div class="card">
+      <div class="card-body">
+        <div class="icon-box"><i class="fas fa-microscope"></i></div>
+        <h3>Crack Segmentation</h3>
+        <p>Sample train/val/test split for pixel-level crack segmentation (images, masks, and labels).</p>
+        <div class="btn-row">
+          <a class="btn"
+             href="assets/sample-data/crack-segmentation/Crack%20Segmentation.zip"
+             download>Download ZIP</a>
+          <a class="btn secondary"
+             href="assets/sample-data/crack-segmentation/"
+             target="_blank" rel="noopener noreferrer">Open Folder</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rutting Measurements -->
+    <div class="card">
+      <div class="card-body">
+        <div class="icon-box"><i class="fas fa-road"></i></div>
+        <h3>Rutting Measurements</h3>
+        <p>AMES TPS sample: intensity grid (NPZ), range grid (NPZ), and lane-edge data (NPY), aligned by profile.</p>
+        <div class="btn-row">
+          <a class="btn"
+             href="assets/sample-data/rutting-measurements/Rutting%20Measurements.zip"
+             download>Download ZIP</a>
+          <a class="btn secondary"
+             href="assets/sample-data/rutting-measurements/"
+             target="_blank" rel="noopener noreferrer">Open Folder</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fuzzy Assessment -->
+    <div class="card">
+      <div class="card-body">
+        <div class="icon-box"><i class="fas fa-project-diagram"></i></div>
+        <h3>Fuzzy Assessment</h3>
+        <p>Sample inputs for IFPI/IDPI computation, including normalization rules, weights, and survey-derived files.</p>
+        <div class="btn-row">
+          <a class="btn"
+             href="assets/sample-data/fuzzy-assessment/Fuzzy%20Assessment.zip"
+             download>Download ZIP</a>
+          <a class="btn secondary"
+             href="assets/sample-data/fuzzy-assessment/"
+             target="_blank" rel="noopener noreferrer">Open Folder</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Principal Researcher: <strong>Ali Fares</strong> (PhD Candidate, PolyU)</p>
+    <p class="muted">Contact: <strong>ali.i.fares@connect.polyu.hk</strong></p>
+  </div>
+</body>
+</html>
