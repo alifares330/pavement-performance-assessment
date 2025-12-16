@@ -110,13 +110,6 @@
     }
 
     /* Buttons */
-    .btn-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 8px;
-    }
-
     .btn {
       display: block;
       width: 100%;
@@ -131,13 +124,6 @@
     }
     .btn:hover { background: #0b3d75; }
 
-    .btn.secondary {
-      background: #ffffff;
-      color: var(--primary);
-      border: 1px solid #d8deea;
-    }
-    .btn.secondary:hover { background: #f6f8fc; }
-
     /* Footer */
     .footer {
       text-align: center;
@@ -148,15 +134,6 @@
       background: #fff;
     }
     .footer strong { color: var(--primary); }
-
-    .note {
-      max-width: 1100px;
-      margin: 0 auto 10px;
-      padding: 0 20px;
-      color: #6b7280;
-      font-size: 0.95rem;
-      text-align: center;
-    }
   </style>
 </head>
 
@@ -177,10 +154,6 @@
     <p>Download curated sample datasets for reproducible demonstrations and testing.</p>
   </div>
 
-  <p class="note">
-    If a download link opens a folder view, click the file name to download it directly.
-  </p>
-
   <div class="container">
 
     <!-- Crack Segmentation -->
@@ -189,14 +162,9 @@
         <div class="icon-box"><i class="fas fa-microscope"></i></div>
         <h3>Crack Segmentation</h3>
         <p>Sample train/val/test split for pixel-level crack segmentation (images, masks, and labels).</p>
-        <div class="btn-row">
-          <a class="btn"
-             href="assets/sample-data/crack-segmentation/Crack%20Segmentation.zip"
-             download>Download ZIP</a>
-          <a class="btn secondary"
-             href="assets/sample-data/crack-segmentation/"
-             target="_blank" rel="noopener noreferrer">Open Folder</a>
-        </div>
+        <a class="btn"
+           href="assets/sample-data/crack-segmentation/Crack%20Segmentation.zip"
+           download>Download ZIP</a>
       </div>
     </div>
 
@@ -206,14 +174,9 @@
         <div class="icon-box"><i class="fas fa-road"></i></div>
         <h3>Rutting Measurements</h3>
         <p>AMES TPS sample: intensity grid (NPZ), range grid (NPZ), and lane-edge data (NPY), aligned by profile.</p>
-        <div class="btn-row">
-          <a class="btn"
-             href="assets/sample-data/rutting-measurements/Rutting%20Measurements.zip"
-             download>Download ZIP</a>
-          <a class="btn secondary"
-             href="assets/sample-data/rutting-measurements/"
-             target="_blank" rel="noopener noreferrer">Open Folder</a>
-        </div>
+        <a class="btn"
+           href="assets/sample-data/rutting-measurements/Rutting%20Measurements.zip"
+           download>Download ZIP</a>
       </div>
     </div>
 
@@ -223,14 +186,9 @@
         <div class="icon-box"><i class="fas fa-project-diagram"></i></div>
         <h3>Fuzzy Assessment</h3>
         <p>Sample inputs for IFPI/IDPI computation, including normalization rules, weights, and survey-derived files.</p>
-        <div class="btn-row">
-          <a class="btn"
-             href="assets/sample-data/fuzzy-assessment/Fuzzy%20Assessment.zip"
-             download>Download ZIP</a>
-          <a class="btn secondary"
-             href="assets/sample-data/fuzzy-assessment/"
-             target="_blank" rel="noopener noreferrer">Open Folder</a>
-        </div>
+        <a class="btn"
+           href="assets/sample-data/fuzzy-assessment/Fuzzy%20Assessment.zip"
+           download>Download ZIP</a>
       </div>
     </div>
 
