@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,21 +16,51 @@
       --text: #2c3e50;
     }
 
-    body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--light); margin: 0; color: var(--text); }
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--light);
+      margin: 0;
+      color: var(--text);
+    }
 
     .topnav {
-      position: sticky; top: 0; z-index: 10;
-      background: rgba(14,77,146,0.96);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(14, 77, 146, 0.96);
       backdrop-filter: blur(6px);
-      border-bottom: 1px solid rgba(255,255,255,0.15);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
+
     .topnav-inner {
-      max-width: 1100px; margin: 0 auto; padding: 10px 20px;
-      display: flex; align-items: center; justify-content: space-between; color: #fff;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
     }
-    .topnav a { color: #fff; text-decoration: none; font-weight: 600; margin-left: 14px; opacity: 0.95; }
-    .topnav a:hover { opacity: 1; text-decoration: underline; }
-    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+
+    .topnav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 14px;
+      opacity: 0.95;
+    }
+
+    .topnav a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+    }
 
     .header {
       background: linear-gradient(135deg, var(--primary), #153e6a);
@@ -37,24 +68,59 @@
       padding: 45px 20px;
       text-align: center;
     }
-    .header h1 { margin: 0; font-size: 2.4rem; }
-    .header p { margin: 10px 0 0; opacity: 0.92; font-weight: 300; }
 
-    .wrap { max-width: 1100px; margin: -30px auto 50px; padding: 0 20px; }
-    .grid { display: grid; grid-template-columns: 1.7fr 1fr; gap: 22px; }
-    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    .header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+
+    .header p {
+      margin: 10px 0 0;
+      opacity: 0.92;
+      font-weight: 300;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: -30px auto 50px;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.7fr 1fr;
+      gap: 22px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
     .card {
       background: #fff;
       border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
       border-top: 5px solid var(--accent);
       overflow: hidden;
     }
-    .card-inner { padding: 26px; }
 
-    h2 { margin: 0 0 12px; color: var(--primary); font-size: 1.35rem; }
-    p { line-height: 1.7; margin: 0 0 12px; color:  var(--primary); }
+    .card-inner {
+      padding: 26px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--primary);
+      font-size: 1.35rem;
+    }
+
+    p {
+      line-height: 1.7;
+      margin: 0 0 12px;
+      color: var(--primary);
+    }
 
     .meta {
       display: grid;
@@ -62,8 +128,18 @@
       font-size: 0.95rem;
       color: #444;
     }
-    .meta .row { display: flex; gap: 10px; align-items: flex-start; }
-    .meta i { color: var(--primary); margin-top: 2px; width: 18px; }
+
+    .meta .row {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .meta i {
+      color: var(--primary);
+      margin-top: 2px;
+      width: 18px;
+    }
 
     .links {
       display: flex;
@@ -71,6 +147,7 @@
       gap: 10px;
       margin-top: 14px;
     }
+
     .pill {
       display: inline-flex;
       align-items: center;
@@ -83,8 +160,17 @@
       background: #fff;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
-    .pill:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
-    .pill img { width: 18px; height: 18px; object-fit: contain; }
+
+    .pill:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .pill img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+    }
 
     .footer {
       text-align: center;
@@ -92,7 +178,32 @@
       color: #7f8c8d;
       font-size: 0.9rem;
     }
-    .footer strong { color: var(--primary); }
+
+    .footer strong {
+      color: var(--primary);
+    }
+
+    .lab-footer{
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid #e6e8ee;
+      text-align: center;
+    }
+
+    .lab-logo-centered{
+      width: 72px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .lab-name{
+      font-size: 0.95rem;
+      color: #444;
+      font-weight: 600;
+    }
+
+
   </style>
 </head>
 
@@ -142,10 +253,14 @@
           </p>
 
           <p>
-            The research further introduces two Integrated Pavement Performance Models (IPPM) — the Integrated Deductive-Based
-            Performance Index (IDPI) and the Integrated Fuzzy Performance Index (IFPI) — which synthesize surface and subsurface
-            indicators across five performance criteria (rideability, safety, user costs, deterioration rate, and environmental impact)
-            using FAHP. Large Language Models are leveraged both to automate qualitative PASER-style assessment (Auto-PASER) and to help
+            The research further introduces two Integrated Pavement Performance Models (IPPM) — the Integrated
+            Deductive-Based
+            Performance Index (IDPI) and the Integrated Fuzzy Performance Index (IFPI) — which synthesize surface and
+            subsurface
+            indicators across five performance criteria (rideability, safety, user costs, deterioration rate, and
+            environmental impact)
+            using FAHP. Large Language Models are leveraged both to automate qualitative PASER-style assessment
+            (Auto-PASER) and to help
             structure expert judgement for model weighting.
           </p>
         </div>
@@ -170,25 +285,38 @@
             </div>
 
             <div class="row">
-              <i class="fas fa-users"></i>
+              <i class="fas fa-user-tie"></i>
               <div>
-                <strong>Supervisor:</strong> Prof. Tarek Zayed (PolyU)</div>
+                <strong>Supervisor:</strong> Prof. Tarek Zayed (PolyU)
+              </div>
             </div>
 
             <div class="row">
-              <i class="fas fa-users"></i>
+              <i class="fas fa-university"></i>
               <div>
-                <strong>Host Supervisor (Reseach Visit):</strong> Dr. Luis Miranda-Moreno (McGill University)</div>
-            </div>
-            
-            <div class="row">
-              <i class="fas fa-envelope"></i>
-              <div><strong>Contact:</strong> ali.i.fares@connect.polyu.hk</div>
+                <strong>Host Supervisor (Research Visit):</strong> Dr. Luis Miranda-Moreno (McGill University)
+              </div>
             </div>
 
             <div class="row">
-              <i class="fas fa-flask"></i>
-              <div><strong>Lab:</strong> SiMS Lab — Smart Infrastructure &amp; Management Systems</div>
+              <i class="fas fa-envelope-open-text"></i>
+              <div>
+                <strong>Contact:</strong><br>
+                <a href="mailto:ali.i.fares@connect.polyu.hk">
+                  ali.i.fares@connect.polyu.hk
+                </a><br>
+                <a href="https://scholar.google.com/citations?user=VYn8rEEAAAAJ&hl=en" target="_blank"
+                  rel="noopener noreferrer">
+                  Google Scholar Profile
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lab-footer">
+            <img src="assets/sims_logo.png" alt="SiMS Lab Logo" class="lab-logo-centered">
+            <div class="lab-name">
+              SiMS Lab — Smart Infrastructure &amp; Management Systems
             </div>
           </div>
 
