@@ -53,7 +53,7 @@
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "Deep Learning model for object detection and localizing subsurface cracks from GPR data, supporting subsurface assessment.",
-      "link": "https://pavementai-surveyor-515579122925.us-west1.run.app/",
+      "link": "https://ranges-readers-sri-bailey.trycloudflare.com",
       "buttonText": "Launch Tool"
     },
     {
