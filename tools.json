@@ -4,11 +4,22 @@
     {
       "id": "crack",
       "category": "surface",
-      "title": "Surface Crack Assessment",
+      "title": "DL-Powered Surface Crack Assessment",
       "icon": "fa-microscope",
       "status": "online",
       "badgeText": "\u25cf System Online",
       "description": "Deep Learning model for pixel-level segmentation of complex surface cracks.",
+      "link": "https://exceptional-timing-robert-classical.trycloudflare.com",
+      "buttonText": "Launch Tool"
+    },
+    {
+      "id": "gen-crack",
+      "category": "surface",
+      "title": "VLM-Assisted Surface Crack Assessment",
+      "icon": "fa-eye",
+      "status": "online",
+      "badgeText": "● System Online",
+      "description": "Vision–language model–assisted surface crack assessment using Gemini for image understanding and pixel-level crack delineation.",
       "link": "https://exceptional-timing-robert-classical.trycloudflare.com",
       "buttonText": "Launch Tool"
     },
